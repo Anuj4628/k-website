@@ -7831,13 +7831,73 @@ body.nav-open {
   }
 }
 
+/* Responsive Grid & Typography Reflowing */
+@media (max-width: 992px) {
+  .section-top {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 20px !important;
+    margin-bottom: 35px !important;
+  }
+
+  .section-header h2 {
+    font-size: clamp(1.8rem, 6vw, 2.8rem) !important;
+    line-height: 1.2 !important;
+    max-width: 100% !important;
+  }
+
+  .section-header p {
+    font-size: clamp(0.95rem, 2.8vw, 1.15rem) !important;
+    line-height: 1.6 !important;
+    max-width: 100% !important;
+  }
+
+  .why-grid,
+  .flipcards-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .value-card,
+  .why-card {
+    padding: 32px 24px !important;
+    border-radius: 20px !important;
+  }
+
+  .why-card h3,
+  .value-card h3 {
+    font-size: 24px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .why-card p,
+  .value-card p {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+  }
+
+  .why-icon,
+  .value-icon {
+    width: 58px !important;
+    height: 58px !important;
+    font-size: 24px !important;
+    margin-bottom: 20px !important;
+    border-radius: 16px !important;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     width: min(100% - 24px, 1200px) !important;
     padding-inline: 12px !important;
   }
 
-  /* Grid Stack Reflowing */
+  /* Grid Stack Reflowing for Mobile */
   .grid,
   .about-grid,
   .contact-wrapper,
@@ -7845,9 +7905,20 @@ body.nav-open {
   .footer-grid,
   .blog-grid,
   .stats-grid,
-  .cards-grid {
+  .cards-grid,
+  .why-grid,
+  .values-grid,
+  .flipcards-grid {
     grid-template-columns: 1fr !important;
     gap: 20px !important;
+  }
+
+  .why-choose-section {
+    padding: 60px 0 !important;
+  }
+
+  .why-card {
+    padding: 28px 20px !important;
   }
 
   .contact-left,
