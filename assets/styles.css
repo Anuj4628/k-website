@@ -7884,7 +7884,8 @@ body.nav-open {
 
 /* Responsive Grid & Typography Reflowing */
 @media (max-width: 992px) {
-  .section-top {
+  .section-top,
+  .section-header {
     flex-direction: column !important;
     align-items: flex-start !important;
     gap: 20px !important;
