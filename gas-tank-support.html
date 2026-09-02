@@ -1,1287 +1,1395 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/x-icon" href="img/krestar-best-favicon.png">
-<title>Gas Tank Support in Uran | Krestar Inc</title>
-<meta name="description" content="Gas tank support services near JNPT port, Uran. Chemical, food-grade and gas tank storage with fast turnaround and compliance.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link rel="stylesheet" href="assets/styles.css">
-<script src="assets/script.js" defer></script>
-<style>
-
-/* ===== GLOBAL ===== */
-body{
-font-family:'Poppins',sans-serif;
-background:#ffffff;
-color:#111;
-}
-.container{width:90%;max-width:1200px;margin:auto;}
-.section{padding:100px 0;}
-
-:root{
---grad:linear-gradient(90deg,#7b2ff7,#00c6ff);
-}
-
-/* ===== HERO ===== */
-.hero{
-height:720px;
-display:flex;
-align-items:center;
-background:url('img/gas-tank-support.webp') center/cover no-repeat;
-position:relative;
-color:#fff;
-}
-.hero::after{
-content:'';
-position:absolute;
-inset:0;
-background:linear-gradient(90deg,rgba(2,6,23,0.35) 50%,rgba(2,6,23,0.2));
-}
-.hero-content{position:relative;max-width:650px;}
-.hero h1{font-size:64px;font-weight:800;line-height:1.1;}
-.hero span{
-background:var(--grad);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-}
-.hero p{margin-top:20px;color:#d1d5db;line-height:1.7;}
-.btn{
-margin-top:25px;
-padding:14px 32px;
-border-radius:40px;
-background:var(--grad);
-color:#fff;
-font-weight:600;
-display:inline-block;
-transition:.3s;
-}
-.btn:hover{
-transform:translateY(-2px);
-box-shadow:0 10px 30px rgba(0,198,255,.3);
-}
-
-/* ===== LIGHT / DARK ===== */
-.section-light{background:#f5f7fb;}
-.section-dark{background:#020617;color:#fff;}
-.section-dark p{color:#bbb;}
-.section h2{font-size:36px;margin-bottom:15px;}
-.section p{line-height:1.7;color:#555;}
-
-/* ===== GRID ===== */
-.grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
-margin-top:40px;
-}
-
-/* ===== CARD ===== */
-.card{
-padding:28px;
-border-radius:14px;
-transition:.3s;
-}
-
-/* LIGHT */
-.section-light .card{
-background:#fff;
-box-shadow:0 10px 25px rgba(0,0,0,.05);
-}
-
-/* DARK */
-.section-dark .card{
-background:linear-gradient(145deg,#0b1225,#050a1a);
-border:1px solid rgba(255,255,255,.05);
-position:relative;
-overflow:hidden;
-}
-.section-dark .card::before{
-content:'';
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:3px;
-background:var(--grad);
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-/* ===== SCALE ===== */
-.scale{
-text-align:center;
-}
-.scale h3{
-font-size:42px;
-background:var(--grad);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-}
-
-/* ===== PROCESS ===== */
-.pipeline{
-position:relative;
-margin-top:60px;
-}
-.pipeline::before{
-content:'';
-position:absolute;
-left:50%;
-top:0;
-width:4px;
-height:100%;
-background:linear-gradient(#7b2ff7,#00c6ff);
-transform:translateX(-50%);
-animation:pulse 2s infinite;
-}
-@keyframes pulse{
-0%{opacity:.4}
-50%{opacity:1}
-100%{opacity:.4}
-}
-
-.step{
-width:45%;
-padding:20px;
-border-radius:10px;
-background:#fff;
-margin-bottom:60px;
-position:relative;
-box-shadow:0 10px 25px rgba(0,0,0,.05);
-}
-
-.step.left{margin-right:auto;}
-.step.right{margin-left:auto;}
-
-.step::after{
-content:'';
-position:absolute;
-top:25px;
-width:16px;
-height:16px;
-background:#00c6ff;
-border-radius:50%;
-}
-
-.step.left::after{right:-34px;}
-.step.right::after{left:-34px;}
-
-/* ===== TAGS ===== */
-.tags{
-margin-top:25px;
-display:flex;
-flex-wrap:wrap;
-gap:10px;
-}
-.tag{
-padding:8px 16px;
-border-radius:30px;
-font-size:13px;
-}
-.section-light .tag{
-background:#fff;
-box-shadow:0 5px 15px rgba(0,0,0,.05);
-}
-.section-dark .tag{
-background:#0b1225;
-}
-
-/* ===== CTA ===== */
-.cta{
-text-align:center;
-background:linear-gradient(90deg,#020617,#0b1225);
-color:#fff;
-}
-.cta p{color:#bbb;margin:15px 0 25px;}
-
-/* ===== RESPONSIVE ===== */
-@media(max-width:900px){
-.grid{grid-template-columns:1fr;}
-.hero h1{font-size:42px;}
-.step{width:100%;}
-.pipeline::before{left:10px;}
-}
-
-/* ===== PREMIUM INTRO SECTION ===== */
-.intro-premium {
-  position: relative;
-  padding: 120px 0;
-  background:
-    radial-gradient(circle at 80% 20%, rgba(120,70,255,0.15), transparent 40%),
-    radial-gradient(circle at 10% 80%, rgba(0,200,255,0.12), transparent 40%),
-    #f8fbff;
-  overflow: hidden;
-}
-
-.intro-wrap {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 60px;
-  align-items: center;
-}
-
-/* LEFT CONTENT */
-.intro-tag {
-  display: inline-block;
-  font-size: 12px;
-  letter-spacing: 1.5px;
-  font-weight: 600;
-  color: #5f6cff;
-  margin-bottom: 20px;
-}
-
-.intro-content h2 {
-  font-size: 44px;
-  line-height: 1.2;
-  margin-bottom: 20px;
-  font-weight: 700;
-  color: #0a0f2c;
-}
-
-.intro-content h2 span {
-  display: block;
-  background: linear-gradient(90deg, #6a5cff, #00c2ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.intro-lead {
-  font-size: 18px;
-  color: #2d3557;
-  margin-bottom: 15px;
-}
-
-.intro-content p {
-  font-size: 15.5px;
-  line-height: 1.7;
-  color: #4a5575;
-}
-
-/* HIGHLIGHTS */
-.intro-highlights {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 25px;
-  gap: 10px;
-  font-size: 14px;
-  color: #1e2a52;
-  font-weight: 500;
-}
-
-/* RIGHT VISUAL */
-.intro-visual {
-  position: relative;
-}
-
-/* glowing orb */
-.glow-orb {
-  position: absolute;
-  width: 280px;
-  height: 280px;
-  background: radial-gradient(circle, rgba(106,92,255,0.4), transparent 70%);
-  filter: blur(40px);
-  top: -40px;
-  right: -40px;
-  z-index: 0;
-}
-
-/* glass card */
-.glass-card {
-  position: relative;
-  backdrop-filter: blur(16px);
-  background: rgba(255,255,255,0.65);
-  border-radius: 20px;
-  padding: 30px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
-  border: 1px solid rgba(255,255,255,0.4);
-  z-index: 2;
-  transition: 0.4s ease;
-}
-
-.glass-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 30px 80px rgba(0,0,0,0.12);
-}
-
-.glass-card h4 {
-  margin-bottom: 15px;
-  font-size: 18px;
-  color: #0a0f2c;
-}
-
-.glass-card ul {
-  list-style: none;
-  padding: 0;
-}
-
-.glass-card ul li {
-  font-size: 14px;
-  margin-bottom: 10px;
-  color: #2f3a63;
-}
-
-/* ===== SCALE PREMIUM WITH IMAGE BG ===== */
-
-.scale-premium {
-  position: relative;
-  padding: 120px 0;
-  color: #fff;
-  overflow: hidden;
-
-  background:
-    linear-gradient(rgba(2,6,23,0.65), rgba(2,6,23,0.55)),
-    url('img/iso-tank-yard.webp') center/cover no-repeat;
-}
-
-/* optional glow layer */
-.scale-premium::before {
-  content: "";
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(106,92,255,0.25), transparent 70%);
-  top: -100px;
-  left: -100px;
-  z-index: 0;
-}
-
-.scale-premium::after {
-  content: "";
-  position: absolute;
-  width: 350px;
-  height: 350px;
-  background: radial-gradient(circle, rgba(0,200,255,0.2), transparent 70%);
-  bottom: -120px;
-  right: -80px;
-  z-index: 0;
-}
-
-/* keep content above overlay */
-.scale-premium .container {
-  position: relative;
-  z-index: 2;
-}
-
-/* HEADER */
-.scale-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.scale-tag {
-  font-size: 12px;
-  letter-spacing: 2px;
-  color: #6a5cff;
-  font-weight: 600;
-}
-
-.scale-header h2 {
-  font-size: 36px;
-  margin: 10px 0;
-}
-
-.scale-header p {
-  color: #a0b2d6;
-  font-size: 15px;
-}
-
-/* GRID */
-.scale-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-/* CARD */
-.scale-card {
-  background: linear-gradient(135deg, #6a5cff, #00c2ff);
-  padding: 40px 20px;
-  border-radius: 18px;
-  text-align: center;
-  transition: 0.4s ease;
-  position: relative;
-  color: #fff;
-
-  /* remove old styles effect */
-  border: none;
-  backdrop-filter: none;
-}
-
-/* subtle depth overlay (premium touch) */
-.scale-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 18px;
-  background: linear-gradient(rgba(255,255,255,0.08), transparent);
-  opacity: 0.6;
-  pointer-events: none;
-}
-
-/* hover */
-.scale-card:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 25px 60px rgba(0,0,0,0.5);
-}
-
-.scale-card:hover {
-  transform: translateY(-8px);
-  border-color: rgba(106,92,255,0.5);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
-}
-
-/* ===== ICON (WHITE) ===== */
-.scale-icon {
-  font-size: 26px;
-  margin-bottom: 15px;
-  color: #fff;
-}
-
-/* ===== NUMBER (WHITE - NO GRADIENT) ===== */
-.scale-card h3 {
-  font-size: 42px;
-  font-weight: 700;
-  margin-bottom: 5px;
-  color: #fff;
-
-  /* remove gradient */
-  background: none;
-  -webkit-text-fill-color: unset;
-}
-
-/* TEXT */
-.scale-card p {
-  font-size: 14px;
-  color: rgba(255,255,255,0.9);
-}
-
-/* ===== SERVICES PREMIUM ===== */
-
-.services-premium {
-  padding: 100px 0;
-  background: #f6f9ff;
-}
-
-/* HEADER */
-.section-head {
-  max-width: 800px;
-  margin-bottom: 50px;
-}
-
-.section-tag {
-  font-size: 12px;
-  letter-spacing: 2px;
-  color: #6a5cff;
-  font-weight: 600;
-}
-
-.section-head h2 {
-  font-size: 36px;
-  margin: 10px 0;
-  color: #0a0f2c;
-}
-
-.section-head p {
-  color: #4a5575;
-  font-size: 15px;
-  line-height: 1.7;
-}
-
-/* GRID */
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-/* CARD */
-.service-card {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 16px;
-  border: 1px solid #e4e9f5;
-  transition: 0.35s ease;
-  position: relative;
-}
-
-/* HOVER */
-.service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
-  border-color: #d6dcff;
-}
-
-/* ICON */
-.service-icon {
-  font-size: 24px;
-  margin-bottom: 15px;
-  color: #00c2ff;
-}
-
-/* TITLE */
-.service-card h4 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #0a0f2c;
-}
-
-/* TEXT */
-.service-card p {
-  font-size: 14px;
-  color: #5a678c;
-  margin-bottom: 15px;
-  line-height: 1.6;
-}
-
-/* LIST */
-.service-card ul {
-  padding-left: 18px;
-}
-
-.service-card ul li {
-  font-size: 13.5px;
-  color: #2f3a63;
-  margin-bottom: 6px;
-}
-
-/* ===== PROCESS FLOW V2 (ISOLATED SAFE DESIGN) ===== */
-
-.process-flow-v2 {
-  padding: 80px 20px;
-  background: #ffffff;
-}
-
-.pf-container {
-  max-width: 1100px;
-  margin: auto;
-}
-
-/* HEADER */
-.pf-header {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.pf-header h2 {
-  font-size: 32px;
-  margin-bottom: 10px;
-  color: #0a0f2c;
-}
-
-.pf-header p {
-  color: #555;
-  font-size: 15px;
-  max-width: 700px;
-  margin: auto;
-}
-
-/* STEPS WRAP */
-.pf-steps {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-/* STEP */
-.pf-step {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 20px;
-  border: 1px solid #e5e8f0;
-  border-radius: 12px;
-  transition: 0.3s;
-  background: #fafcff;
-}
-
-.pf-step:hover {
-  background: #f0f5ff;
-  transform: translateY(-4px);
-}
-
-/* NUMBER */
-.pf-num {
-  min-width: 50px;
-  height: 50px;
-  background: linear-gradient(90deg, #6a5cff, #00c2ff);
-  color: #fff;
-  font-weight: 700;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-}
-
-/* CONTENT */
-.pf-content h4 {
-  margin-bottom: 5px;
-  font-size: 18px;
-  color: #0a0f2c;
-}
-
-.pf-content p {
-  font-size: 14px;
-  color: #555;
-  line-height: 1.6;
-}
-
-/* MOBILE SAFE */
-@media (max-width: 600px) {
-  .pf-step {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-/* ===== INDUSTRIES FUTURISTIC ===== */
-
-.industries-futuristic {
-  padding: 100px 20px;
-  background: linear-gradient(135deg, #020617, #0b1f3a);
-  color: #fff;
-}
-
-.if-container {
-  max-width: 1200px;
-  margin: auto;
-}
-
-/* HEADER */
-.if-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.if-tag {
-  font-size: 12px;
-  letter-spacing: 2px;
-  color: #6a5cff;
-  font-weight: 600;
-}
-
-.if-header h2 {
-  font-size: 34px;
-  margin: 10px 0;
-}
-
-.if-header p {
-  color: #a0b2d6;
-  max-width: 700px;
-  margin: auto;
-  font-size: 15px;
-}
-
-/* GRID */
-.if-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-}
-
-/* ===== INDUSTRY CARD (SOLID BRAND COLOR) ===== */
-
-.if-card {
-  background: #6a5cff;
-  padding: 25px 15px;
-  border-radius: 16px;
-  text-align: center;
-  transition: 0.3s ease;
-  position: relative;
-  color: #fff;
-
-  border: none;
-}
-
-/* hover */
-.if-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
-}
-
-/* ICON */
-.if-card i {
-  color: #fff;
-}
-
-/* TEXT */
-.if-card h4 {
-  color: #fff;
-}
-
-.if-card p {
-  color: rgba(255,255,255,0.9);
-}
-
-/* ===== CTA PREMIUM (IMAGE + CINEMATIC LOOK) ===== */
-
-.cta-premium {
-  position: relative;
-  padding: 140px 20px;
-  text-align: center;
-  color: #fff;
-  overflow: hidden;
-
-  /* 🔥 REAL IMAGE BACKGROUND */
-  background: 
-    linear-gradient(rgba(5,11,26,0.85), rgba(5,11,26,0.55)),
-    url('img/cta-iso-tank-bg.webp') center/cover no-repeat;
-}
-
-/* subtle glow accents */
-.cta-premium::before {
-  content: "";
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  top: -150px;
-  left: -150px;
-  background: radial-gradient(circle, rgba(106,92,255,0.25), transparent 70%);
-  z-index: 0;
-}
-
-.cta-premium::after {
-  content: "";
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  bottom: -120px;
-  right: -100px;
-  background: radial-gradient(circle, rgba(0,200,255,0.2), transparent 70%);
-  z-index: 0;
-}
-
-/* content above overlay */
-.cta-inner {
-  max-width: 900px;
-  margin: auto;
-  position: relative;
-  z-index: 2;
-}
-
-/* HEADING */
-.cta-content h2 {
-  font-size: 42px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  line-height: 1.3;
-  text-shadow: 0 4px 20px rgba(0,0,0,0.6);
-}
-
-/* SUBTEXT */
-.cta-content p {
-  color: #cbd6f3;
-  font-size: 16px;
-  margin-bottom: 35px;
-}
-
-/* BUTTON WRAP */
-.cta-actions {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-/* BASE BUTTON */
-.cta-btn {
-  padding: 16px 34px;
-  border-radius: 50px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  font-size: 15px;
-}
-
-/* PRIMARY BUTTON */
-.cta-btn.primary {
-  background: linear-gradient(90deg, #6a5cff, #00c2ff);
-  color: #fff;
-  box-shadow: 0 8px 25px rgba(0,200,255,0.25);
-}
-
-.cta-btn.primary:hover {
-  transform: translateY(-4px) scale(1.03);
-  box-shadow: 0 15px 40px rgba(0,200,255,0.4);
-}
-
-/* SECONDARY BUTTON */
-.cta-btn.secondary {
-  border: 1px solid rgba(255,255,255,0.4);
-  color: #fff;
-  backdrop-filter: blur(6px);
-}
-
-.cta-btn.secondary:hover {
-  background: rgba(255,255,255,0.1);
-  transform: translateY(-3px);
-}
-
-@media (max-width: 900px){
-  .grid,
-  .services-grid,
-  .scale-grid,
-  .if-grid{
-    grid-template-columns: 1fr;
-  }
-
-  .hero h1{font-size:42px;}
-
-  .intro-wrap{grid-template-columns:1fr;}
-
-  .step{width:100%;}
-
-  .pipeline::before{left:10px;}
-}
-
-/* ===== GLOBAL REVEAL SYSTEM ===== */
-
-/* initial state */
-.reveal {
-  opacity: 0;
-  transform: translateY(40px) scale(0.98);
-  filter: blur(6px);
-  transition: 
-    opacity 0.7s ease,
-    transform 0.7s cubic-bezier(.2,.8,.2,1),
-    filter 0.7s ease;
-}
-
-/* active state */
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-  filter: blur(0);
-}
-
-/* delay variations */
-.reveal.delay-1 { transition-delay: 0.1s; }
-.reveal.delay-2 { transition-delay: 0.2s; }
-.reveal.delay-3 { transition-delay: 0.3s; }
-.reveal.delay-4 { transition-delay: 0.4s; }
-
-/* ===== ADVANCED VARIANTS ===== */
-
-/* slide left */
-.reveal-left {
-  transform: translateX(-60px);
-}
-.reveal-left.active {
-  transform: translateX(0);
-}
-
-/* slide right */
-.reveal-right {
-  transform: translateX(60px);
-}
-.reveal-right.active {
-  transform: translateX(0);
-}
-
-/* zoom-in */
-.reveal-zoom {
-  transform: scale(0.85);
-}
-.reveal-zoom.active {
-  transform: scale(1);
-}
-
-/* rotate subtle (premium feel) */
-.reveal-tilt {
-  transform: rotateX(10deg) translateY(40px);
-}
-.reveal-tilt.active {
-  transform: rotateX(0) translateY(0);
-}
-
-/* ===== HOVER MICRO INTERACTION ===== */
-
-.card,
-.service-card,
-.if-card,
-.scale-card,
-.pf-step {
-  transition: transform .35s ease, box-shadow .35s ease;
-}
-
-.card:hover,
-.service-card:hover,
-.if-card:hover,
-.scale-card:hover,
-.pf-step:hover {
-  transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-}
-
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="img/krestar-best-favicon.png">
+  <title>Gas Tank Support in Uran | Krestar Inc</title>
+  <meta name="description"
+    content="Gas tank support services near NSA port, Uran. Chemical, food-grade and gas tank storage with fast turnaround and compliance.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/script.js" defer></script>
+  <style>
+    /* ===== GLOBAL ===== */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #ffffff;
+      color: #111;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section {
+      padding: 100px 0;
+    }
+
+    :root {
+      --grad: linear-gradient(90deg, #7b2ff7, #00c6ff);
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      height: 720px;
+      display: flex;
+      align-items: center;
+      background: url('img/gas-tank-support.webp') center/cover no-repeat;
+      position: relative;
+      color: #fff;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(2, 6, 23, 0.35) 50%, rgba(2, 6, 23, 0.2));
+    }
+
+    .hero-content {
+      position: relative;
+      max-width: 650px;
+    }
+
+    .hero h1 {
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+
+    .hero span {
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      margin-top: 20px;
+      color: #d1d5db;
+      line-height: 1.7;
+    }
+
+    .btn {
+      margin-top: 25px;
+      padding: 14px 32px;
+      border-radius: 40px;
+      background: var(--grad);
+      color: #fff;
+      font-weight: 600;
+      display: inline-block;
+      transition: .3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(0, 198, 255, .3);
+    }
+
+    /* ===== LIGHT / DARK ===== */
+    .section-light {
+      background: #f5f7fb;
+    }
+
+    .section-dark {
+      background: #020617;
+      color: #fff;
+    }
+
+    .section-dark p {
+      color: #bbb;
+    }
+
+    .section h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .section p {
+      line-height: 1.7;
+      color: #555;
+    }
+
+    /* ===== GRID ===== */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    /* ===== CARD ===== */
+    .card {
+      padding: 28px;
+      border-radius: 14px;
+      transition: .3s;
+    }
+
+    /* LIGHT */
+    .section-light .card {
+      background: #fff;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, .05);
+    }
+
+    /* DARK */
+    .section-dark .card {
+      background: linear-gradient(145deg, #0b1225, #050a1a);
+      border: 1px solid rgba(255, 255, 255, .05);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .section-dark .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: var(--grad);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    /* ===== SCALE ===== */
+    .scale {
+      text-align: center;
+    }
+
+    .scale h3 {
+      font-size: 42px;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* ===== PROCESS ===== */
+    .pipeline {
+      position: relative;
+      margin-top: 60px;
+    }
+
+    .pipeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(#7b2ff7, #00c6ff);
+      transform: translateX(-50%);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        opacity: .4
+      }
+
+      50% {
+        opacity: 1
+      }
+
+      100% {
+        opacity: .4
+      }
+    }
+
+    .step {
+      width: 45%;
+      padding: 20px;
+      border-radius: 10px;
+      background: #fff;
+      margin-bottom: 60px;
+      position: relative;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, .05);
+    }
+
+    .step.left {
+      margin-right: auto;
+    }
+
+    .step.right {
+      margin-left: auto;
+    }
+
+    .step::after {
+      content: '';
+      position: absolute;
+      top: 25px;
+      width: 16px;
+      height: 16px;
+      background: #00c6ff;
+      border-radius: 50%;
+    }
+
+    .step.left::after {
+      right: -34px;
+    }
+
+    .step.right::after {
+      left: -34px;
+    }
+
+    /* ===== TAGS ===== */
+    .tags {
+      margin-top: 25px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      padding: 8px 16px;
+      border-radius: 30px;
+      font-size: 13px;
+    }
+
+    .section-light .tag {
+      background: #fff;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, .05);
+    }
+
+    .section-dark .tag {
+      background: #0b1225;
+    }
+
+    /* ===== CTA ===== */
+    .cta {
+      text-align: center;
+      background: linear-gradient(90deg, #020617, #0b1225);
+      color: #fff;
+    }
+
+    .cta p {
+      color: #bbb;
+      margin: 15px 0 25px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media(max-width:900px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .step {
+        width: 100%;
+      }
+
+      .pipeline::before {
+        left: 10px;
+      }
+    }
+
+    /* ===== PREMIUM INTRO SECTION ===== */
+    .intro-premium {
+      position: relative;
+      padding: 120px 0;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(120, 70, 255, 0.15), transparent 40%),
+        radial-gradient(circle at 10% 80%, rgba(0, 200, 255, 0.12), transparent 40%),
+        #f8fbff;
+      overflow: hidden;
+    }
+
+    .intro-wrap {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    /* LEFT CONTENT */
+    .intro-tag {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      font-weight: 600;
+      color: #5f6cff;
+      margin-bottom: 20px;
+    }
+
+    .intro-content h2 {
+      font-size: 44px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      font-weight: 700;
+      color: #0a0f2c;
+    }
+
+    .intro-content h2 span {
+      display: block;
+      background: linear-gradient(90deg, #6a5cff, #00c2ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .intro-lead {
+      font-size: 18px;
+      color: #2d3557;
+      margin-bottom: 15px;
+    }
+
+    .intro-content p {
+      font-size: 15.5px;
+      line-height: 1.7;
+      color: #4a5575;
+    }
+
+    /* HIGHLIGHTS */
+    .intro-highlights {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 25px;
+      gap: 10px;
+      font-size: 14px;
+      color: #1e2a52;
+      font-weight: 500;
+    }
+
+    /* RIGHT VISUAL */
+    .intro-visual {
+      position: relative;
+    }
+
+    /* glowing orb */
+    .glow-orb {
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      background: radial-gradient(circle, rgba(106, 92, 255, 0.4), transparent 70%);
+      filter: blur(40px);
+      top: -40px;
+      right: -40px;
+      z-index: 0;
+    }
+
+    /* glass card */
+    .glass-card {
+      position: relative;
+      backdrop-filter: blur(16px);
+      background: rgba(255, 255, 255, 0.65);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      z-index: 2;
+      transition: 0.4s ease;
+    }
+
+    .glass-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.12);
+    }
+
+    .glass-card h4 {
+      margin-bottom: 15px;
+      font-size: 18px;
+      color: #0a0f2c;
+    }
+
+    .glass-card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .glass-card ul li {
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #2f3a63;
+    }
+
+    /* ===== SCALE PREMIUM WITH IMAGE BG ===== */
+
+    .scale-premium {
+      position: relative;
+      padding: 120px 0;
+      color: #fff;
+      overflow: hidden;
+
+      background:
+        linear-gradient(rgba(2, 6, 23, 0.65), rgba(2, 6, 23, 0.55)),
+        url('img/iso-tank-yard.webp') center/cover no-repeat;
+    }
+
+    /* optional glow layer */
+    .scale-premium::before {
+      content: "";
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(106, 92, 255, 0.25), transparent 70%);
+      top: -100px;
+      left: -100px;
+      z-index: 0;
+    }
+
+    .scale-premium::after {
+      content: "";
+      position: absolute;
+      width: 350px;
+      height: 350px;
+      background: radial-gradient(circle, rgba(0, 200, 255, 0.2), transparent 70%);
+      bottom: -120px;
+      right: -80px;
+      z-index: 0;
+    }
+
+    /* keep content above overlay */
+    .scale-premium .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* HEADER */
+    .scale-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .scale-tag {
+      font-size: 12px;
+      letter-spacing: 2px;
+      color: #6a5cff;
+      font-weight: 600;
+    }
+
+    .scale-header h2 {
+      font-size: 36px;
+      margin: 10px 0;
+    }
+
+    .scale-header p {
+      color: #a0b2d6;
+      font-size: 15px;
+    }
+
+    /* GRID */
+    .scale-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    /* CARD */
+    .scale-card {
+      background: linear-gradient(135deg, #6a5cff, #00c2ff);
+      padding: 40px 20px;
+      border-radius: 18px;
+      text-align: center;
+      transition: 0.4s ease;
+      position: relative;
+      color: #fff;
+
+      /* remove old styles effect */
+      border: none;
+      backdrop-filter: none;
+    }
+
+    /* subtle depth overlay (premium touch) */
+    .scale-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 18px;
+      background: linear-gradient(rgba(255, 255, 255, 0.08), transparent);
+      opacity: 0.6;
+      pointer-events: none;
+    }
+
+    /* hover */
+    .scale-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .scale-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(106, 92, 255, 0.5);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    }
+
+    /* ===== ICON (WHITE) ===== */
+    .scale-icon {
+      font-size: 26px;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    /* ===== NUMBER (WHITE - NO GRADIENT) ===== */
+    .scale-card h3 {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 5px;
+      color: #fff;
+
+      /* remove gradient */
+      background: none;
+      -webkit-text-fill-color: unset;
+    }
+
+    /* TEXT */
+    .scale-card p {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    /* ===== SERVICES PREMIUM ===== */
+
+    .services-premium {
+      padding: 100px 0;
+      background: #f6f9ff;
+    }
+
+    /* HEADER */
+    .section-head {
+      max-width: 800px;
+      margin-bottom: 50px;
+    }
+
+    .section-tag {
+      font-size: 12px;
+      letter-spacing: 2px;
+      color: #6a5cff;
+      font-weight: 600;
+    }
+
+    .section-head h2 {
+      font-size: 36px;
+      margin: 10px 0;
+      color: #0a0f2c;
+    }
+
+    .section-head p {
+      color: #4a5575;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    /* GRID */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    /* CARD */
+    .service-card {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 16px;
+      border: 1px solid #e4e9f5;
+      transition: 0.35s ease;
+      position: relative;
+    }
+
+    /* HOVER */
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+      border-color: #d6dcff;
+    }
+
+    /* ICON */
+    .service-icon {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #00c2ff;
+    }
+
+    /* TITLE */
+    .service-card h4 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #0a0f2c;
+    }
+
+    /* TEXT */
+    .service-card p {
+      font-size: 14px;
+      color: #5a678c;
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    /* LIST */
+    .service-card ul {
+      padding-left: 18px;
+    }
+
+    .service-card ul li {
+      font-size: 13.5px;
+      color: #2f3a63;
+      margin-bottom: 6px;
+    }
+
+    /* ===== PROCESS FLOW V2 (ISOLATED SAFE DESIGN) ===== */
+
+    .process-flow-v2 {
+      padding: 80px 20px;
+      background: #ffffff;
+    }
+
+    .pf-container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* HEADER */
+    .pf-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .pf-header h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #0a0f2c;
+    }
+
+    .pf-header p {
+      color: #555;
+      font-size: 15px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* STEPS WRAP */
+    .pf-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    /* STEP */
+    .pf-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 20px;
+      border: 1px solid #e5e8f0;
+      border-radius: 12px;
+      transition: 0.3s;
+      background: #fafcff;
+    }
+
+    .pf-step:hover {
+      background: #f0f5ff;
+      transform: translateY(-4px);
+    }
+
+    /* NUMBER */
+    .pf-num {
+      min-width: 50px;
+      height: 50px;
+      background: linear-gradient(90deg, #6a5cff, #00c2ff);
+      color: #fff;
+      font-weight: 700;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+
+    /* CONTENT */
+    .pf-content h4 {
+      margin-bottom: 5px;
+      font-size: 18px;
+      color: #0a0f2c;
+    }
+
+    .pf-content p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* MOBILE SAFE */
+    @media (max-width: 600px) {
+      .pf-step {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    /* ===== INDUSTRIES FUTURISTIC ===== */
+
+    .industries-futuristic {
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #020617, #0b1f3a);
+      color: #fff;
+    }
+
+    .if-container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* HEADER */
+    .if-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .if-tag {
+      font-size: 12px;
+      letter-spacing: 2px;
+      color: #6a5cff;
+      font-weight: 600;
+    }
+
+    .if-header h2 {
+      font-size: 34px;
+      margin: 10px 0;
+    }
+
+    .if-header p {
+      color: #a0b2d6;
+      max-width: 700px;
+      margin: auto;
+      font-size: 15px;
+    }
+
+    /* GRID */
+    .if-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+    }
+
+    /* ===== INDUSTRY CARD (SOLID BRAND COLOR) ===== */
+
+    .if-card {
+      background: #6a5cff;
+      padding: 25px 15px;
+      border-radius: 16px;
+      text-align: center;
+      transition: 0.3s ease;
+      position: relative;
+      color: #fff;
+
+      border: none;
+    }
+
+    /* hover */
+    .if-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    }
+
+    /* ICON */
+    .if-card i {
+      color: #fff;
+    }
+
+    /* TEXT */
+    .if-card h4 {
+      color: #fff;
+    }
+
+    .if-card p {
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    /* ===== CTA PREMIUM (IMAGE + CINEMATIC LOOK) ===== */
+
+    .cta-premium {
+      position: relative;
+      padding: 140px 20px;
+      text-align: center;
+      color: #fff;
+      overflow: hidden;
+
+      /* 🔥 REAL IMAGE BACKGROUND */
+      background:
+        linear-gradient(rgba(5, 11, 26, 0.85), rgba(5, 11, 26, 0.55)),
+        url('img/cta-iso-tank-bg.webp') center/cover no-repeat;
+    }
+
+    /* subtle glow accents */
+    .cta-premium::before {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      top: -150px;
+      left: -150px;
+      background: radial-gradient(circle, rgba(106, 92, 255, 0.25), transparent 70%);
+      z-index: 0;
+    }
+
+    .cta-premium::after {
+      content: "";
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      bottom: -120px;
+      right: -100px;
+      background: radial-gradient(circle, rgba(0, 200, 255, 0.2), transparent 70%);
+      z-index: 0;
+    }
+
+    /* content above overlay */
+    .cta-inner {
+      max-width: 900px;
+      margin: auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* HEADING */
+    .cta-content h2 {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.3;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    /* SUBTEXT */
+    .cta-content p {
+      color: #cbd6f3;
+      font-size: 16px;
+      margin-bottom: 35px;
+    }
+
+    /* BUTTON WRAP */
+    .cta-actions {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    /* BASE BUTTON */
+    .cta-btn {
+      padding: 16px 34px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-size: 15px;
+    }
+
+    /* PRIMARY BUTTON */
+    .cta-btn.primary {
+      background: linear-gradient(90deg, #6a5cff, #00c2ff);
+      color: #fff;
+      box-shadow: 0 8px 25px rgba(0, 200, 255, 0.25);
+    }
+
+    .cta-btn.primary:hover {
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 15px 40px rgba(0, 200, 255, 0.4);
+    }
+
+    /* SECONDARY BUTTON */
+    .cta-btn.secondary {
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      color: #fff;
+      backdrop-filter: blur(6px);
+    }
+
+    .cta-btn.secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(-3px);
+    }
+
+    @media (max-width: 900px) {
+
+      .grid,
+      .services-grid,
+      .scale-grid,
+      .if-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .intro-wrap {
+        grid-template-columns: 1fr;
+      }
+
+      .step {
+        width: 100%;
+      }
+
+      .pipeline::before {
+        left: 10px;
+      }
+    }
+
+    /* ===== GLOBAL REVEAL SYSTEM ===== */
+
+    /* initial state */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px) scale(0.98);
+      filter: blur(6px);
+      transition:
+        opacity 0.7s ease,
+        transform 0.7s cubic-bezier(.2, .8, .2, 1),
+        filter 0.7s ease;
+    }
+
+    /* active state */
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      filter: blur(0);
+    }
+
+    /* delay variations */
+    .reveal.delay-1 {
+      transition-delay: 0.1s;
+    }
+
+    .reveal.delay-2 {
+      transition-delay: 0.2s;
+    }
+
+    .reveal.delay-3 {
+      transition-delay: 0.3s;
+    }
+
+    .reveal.delay-4 {
+      transition-delay: 0.4s;
+    }
+
+    /* ===== ADVANCED VARIANTS ===== */
+
+    /* slide left */
+    .reveal-left {
+      transform: translateX(-60px);
+    }
+
+    .reveal-left.active {
+      transform: translateX(0);
+    }
+
+    /* slide right */
+    .reveal-right {
+      transform: translateX(60px);
+    }
+
+    .reveal-right.active {
+      transform: translateX(0);
+    }
+
+    /* zoom-in */
+    .reveal-zoom {
+      transform: scale(0.85);
+    }
+
+    .reveal-zoom.active {
+      transform: scale(1);
+    }
+
+    /* rotate subtle (premium feel) */
+    .reveal-tilt {
+      transform: rotateX(10deg) translateY(40px);
+    }
+
+    .reveal-tilt.active {
+      transform: rotateX(0) translateY(0);
+    }
+
+    /* ===== HOVER MICRO INTERACTION ===== */
+
+    .card,
+    .service-card,
+    .if-card,
+    .scale-card,
+    .pf-step {
+      transition: transform .35s ease, box-shadow .35s ease;
+    }
+
+    .card:hover,
+    .service-card:hover,
+    .if-card:hover,
+    .scale-card:hover,
+    .pf-step:hover {
+      transform: translateY(-6px) scale(1.01);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    }
+  </style>
 </head>
 
 <body>
 
-<div id="header"></div>
+  <div id="header"></div>
 
-<main>
+  <main>
 
-<!-- HERO -->
-<section class="hero">
-<div class="container hero-content">
-<h1>Gas Tank Container <br><span>Support Services</span></h1>
-<p>
-Specialized gas tank container support services in Uran near JNPT port.
-Ensuring safe handling, degassing, inspection readiness, and compliance for gas logistics.
-</p>
-<a href="contact.html" class="btn">Get Support Quote</a>
-</div>
-
-<div class="hero-social">
-    <a href="#">FACEBOOK <i class="fa-solid fa-arrow-right"></i></a>
-    <a href="#">INSTAGRAM <i class="fa-solid fa-arrow-right"></i></a>
-    <a href="#">TWITTER <i class="fa-solid fa-arrow-right"></i></a>
-</div>
-</section>
-
-
-<!-- INTRO -->
-<section class="section intro-premium">
-  <div class="container intro-wrap">
-
-    <div class="intro-content">
-      <span class="intro-tag">GAS TANK SUPPORT • URAN (JNPT)</span>
-
-      <h2>
-        Advanced Gas Tank Container Support Facility 
-        <span>Near Nhava Sheva Port</span>
-      </h2>
-
-      <p class="intro-lead">
-        Krestar Inc. provides specialized gas tank container support services in Uran,
-        designed for safe handling, degassing, and preparation of gas tanks for logistics operations.
-      </p>
-
-      <p>
-        Our facility is equipped for <strong>gas tank degassing, venting, safety preparation,
-        inspection readiness, and handling support</strong>. We ensure all gas tank containers are
-        <strong>safe, compliant, and ready for transport, maintenance, or reuse</strong>.
-      </p>
-
-      <div class="intro-highlights">
-        <div>✔ Safe Gas Tank Degassing</div>
-        <div>✔ Controlled Venting Systems</div>
-        <div>✔ Inspection & Maintenance Support</div>
-        <div>✔ Compliance with Gas Safety Standards</div>
-      </div>
-    </div>
-
-    <div class="intro-visual">
-      <div class="glow-orb"></div>
-      <div class="glass-card">
-        <h4>Support Capabilities</h4>
-        <ul>
-          <li>Gas Venting & Pressure Release</li>
-          <li>Hazard-Controlled Handling</li>
-          <li>Preparation for Inspection & Repair</li>
-          <li>Compliance with Safety Protocols</li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- SCALE -->
-<section class="section scale-premium">
-  <div class="container">
-
-    <div class="scale-header">
-      <span class="scale-tag">GAS HANDLING FACILITY</span>
-      <h2>Built for Safe Gas Tank Operations</h2>
-      <p>Designed for controlled handling, degassing, and preparation of gas tank containers.</p>
-    </div>
-
-    <div class="scale-grid">
-
-      <div class="scale-card">
-        <div class="scale-icon"><i class="fa-solid fa-wind"></i></div>
-        <h3 class="counter" data-target="1200">0</h3>
-        <p>Gas Tanks Handled Annually</p>
-      </div>
-
-      <div class="scale-card">
-        <div class="scale-icon"><i class="fa-solid fa-shield-halved"></i></div>
-        <h3 class="counter" data-target="100">0</h3>
-        <p>Safety Compliance Rate</p>
-      </div>
-
-      <div class="scale-card">
-        <div class="scale-icon"><i class="fa-solid fa-industry"></i></div>
-        <h3 class="counter" data-target="20">0</h3>
-        <p>Years Industry Experience</p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- SERVICES -->
-<section class="section section-light services-premium">
-  <div class="container">
-
-    <div class="section-head">
-      <span class="section-tag">CORE SERVICES</span>
-      <h2>Gas Tank Container Support Capabilities</h2>
-      <p>
-        Krestar Inc. provides complete gas tank support services in Uran near JNPT,
-        ensuring safe handling, controlled degassing, and compliance with gas transport regulations.
-      </p>
-    </div>
-
-    <div class="services-grid">
-
-      <div class="service-card">
-        <div class="service-icon"><i class="fa-solid fa-wind"></i></div>
-
-        <h4>Gas Tank Degassing</h4>
-
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>Gas Tank Container <br><span>Support Services</span></h1>
         <p>
-          Controlled removal of residual gases from tank containers before inspection or reuse.
+          Specialized gas tank container support services in Uran near NSA port.
+          Ensuring safe handling, degassing, inspection readiness, and compliance for gas logistics.
         </p>
-
-        <ul>
-          <li>Safe venting procedures</li>
-          <li>Pressure release systems</li>
-          <li>Hazard-controlled environment</li>
-          <li>Preparation for cleaning & repair</li>
-        </ul>
+        <a href="contact.html" class="btn">Get Support Quote</a>
       </div>
 
-      <div class="service-card">
-        <div class="service-icon"><i class="fa-solid fa-gauge"></i></div>
-
-        <h4>Pressure & Safety Handling</h4>
-
-        <p>
-          Safe handling of pressurized gas tank containers with strict safety protocols.
-        </p>
-
-        <ul>
-          <li>Pressure monitoring systems</li>
-          <li>Emergency safety procedures</li>
-          <li>Controlled gas handling</li>
-          <li>Risk mitigation processes</li>
-        </ul>
+      <div class="hero-social">
+        <a href="#">FACEBOOK <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#">INSTAGRAM <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#">TWITTER <i class="fa-solid fa-arrow-right"></i></a>
       </div>
-
-      <div class="service-card">
-        <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-
-        <h4>Inspection & Maintenance Support</h4>
-
-        <p>
-          Preparation of gas tanks for inspection, testing, and maintenance activities.
-        </p>
-
-        <ul>
-          <li>Pre-inspection preparation</li>
-          <li>Support for testing procedures</li>
-          <li>Maintenance readiness</li>
-          <li>Compliance verification</li>
-        </ul>
-      </div>
-
-    </div>
-
-  </div>
-</section>
+    </section>
 
 
-<!-- PROCESS -->
-<section class="process-flow-v2">
-  <div class="pf-container">
+    <!-- INTRO -->
+    <section class="section intro-premium">
+      <div class="container intro-wrap">
 
-    <div class="pf-header">
-      <h2>Gas Tank Support Workflow</h2>
-      <p>
-        Our structured workflow ensures safe handling, degassing, and preparation
-        of gas tank containers for further operations.
-      </p>
-    </div>
+        <div class="intro-content">
+          <span class="intro-tag">GAS TANK SUPPORT • URAN (NSA)</span>
 
-    <div class="pf-steps">
+          <h2>
+            Advanced Gas Tank Container Support Facility
+            <span>Near Nhava Sheva Port</span>
+          </h2>
 
-      <div class="pf-step">
-        <div class="pf-num">01</div>
-        <div class="pf-content">
-          <h4>Initial Safety Assessment</h4>
+          <p class="intro-lead">
+            Krestar Inc. provides specialized gas tank container support services in Uran,
+            designed for safe handling, degassing, and preparation of gas tanks for logistics operations.
+          </p>
+
           <p>
-            Evaluation of tank pressure, gas type, and safety conditions before handling.
+            Our facility is equipped for <strong>gas tank degassing, venting, safety preparation,
+              inspection readiness, and handling support</strong>. We ensure all gas tank containers are
+            <strong>safe, compliant, and ready for transport, maintenance, or reuse</strong>.
+          </p>
+
+          <div class="intro-highlights">
+            <div>✔ Safe Gas Tank Degassing</div>
+            <div>✔ Controlled Venting Systems</div>
+            <div>✔ Inspection & Maintenance Support</div>
+            <div>✔ Compliance with Gas Safety Standards</div>
+          </div>
+        </div>
+
+        <div class="intro-visual">
+          <div class="glow-orb"></div>
+          <div class="glass-card">
+            <h4>Support Capabilities</h4>
+            <ul>
+              <li>Gas Venting & Pressure Release</li>
+              <li>Hazard-Controlled Handling</li>
+              <li>Preparation for Inspection & Repair</li>
+              <li>Compliance with Safety Protocols</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SCALE -->
+    <section class="section scale-premium">
+      <div class="container">
+
+        <div class="scale-header">
+          <span class="scale-tag">GAS HANDLING FACILITY</span>
+          <h2>Built for Safe Gas Tank Operations</h2>
+          <p>Designed for controlled handling, degassing, and preparation of gas tank containers.</p>
+        </div>
+
+        <div class="scale-grid">
+
+          <div class="scale-card">
+            <div class="scale-icon"><i class="fa-solid fa-wind"></i></div>
+            <h3 class="counter" data-target="1200">0</h3>
+            <p>Gas Tanks Handled Annually</p>
+          </div>
+
+          <div class="scale-card">
+            <div class="scale-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3 class="counter" data-target="100">0</h3>
+            <p>Safety Compliance Rate</p>
+          </div>
+
+          <div class="scale-card">
+            <div class="scale-icon"><i class="fa-solid fa-industry"></i></div>
+            <h3 class="counter" data-target="20">0</h3>
+            <p>Years Industry Experience</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SERVICES -->
+    <section class="section section-light services-premium">
+      <div class="container">
+
+        <div class="section-head">
+          <span class="section-tag">CORE SERVICES</span>
+          <h2>Gas Tank Container Support Capabilities</h2>
+          <p>
+            Krestar Inc. provides complete gas tank support services in Uran near NSA,
+            ensuring safe handling, controlled degassing, and compliance with gas transport regulations.
           </p>
         </div>
-      </div>
 
-      <div class="pf-step">
-        <div class="pf-num">02</div>
-        <div class="pf-content">
-          <h4>Controlled Degassing</h4>
+        <div class="services-grid">
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-wind"></i></div>
+
+            <h4>Gas Tank Degassing</h4>
+
+            <p>
+              Controlled removal of residual gases from tank containers before inspection or reuse.
+            </p>
+
+            <ul>
+              <li>Safe venting procedures</li>
+              <li>Pressure release systems</li>
+              <li>Hazard-controlled environment</li>
+              <li>Preparation for cleaning & repair</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-gauge"></i></div>
+
+            <h4>Pressure & Safety Handling</h4>
+
+            <p>
+              Safe handling of pressurized gas tank containers with strict safety protocols.
+            </p>
+
+            <ul>
+              <li>Pressure monitoring systems</li>
+              <li>Emergency safety procedures</li>
+              <li>Controlled gas handling</li>
+              <li>Risk mitigation processes</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+
+            <h4>Inspection & Maintenance Support</h4>
+
+            <p>
+              Preparation of gas tanks for inspection, testing, and maintenance activities.
+            </p>
+
+            <ul>
+              <li>Pre-inspection preparation</li>
+              <li>Support for testing procedures</li>
+              <li>Maintenance readiness</li>
+              <li>Compliance verification</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PROCESS -->
+    <section class="process-flow-v2">
+      <div class="pf-container">
+
+        <div class="pf-header">
+          <h2>Gas Tank Support Workflow</h2>
           <p>
-            Safe release of residual gases using controlled venting systems.
+            Our structured workflow ensures safe handling, degassing, and preparation
+            of gas tank containers for further operations.
           </p>
         </div>
-      </div>
 
-      <div class="pf-step">
-        <div class="pf-num">03</div>
-        <div class="pf-content">
-          <h4>Safety Monitoring</h4>
+        <div class="pf-steps">
+
+          <div class="pf-step">
+            <div class="pf-num">01</div>
+            <div class="pf-content">
+              <h4>Initial Safety Assessment</h4>
+              <p>
+                Evaluation of tank pressure, gas type, and safety conditions before handling.
+              </p>
+            </div>
+          </div>
+
+          <div class="pf-step">
+            <div class="pf-num">02</div>
+            <div class="pf-content">
+              <h4>Controlled Degassing</h4>
+              <p>
+                Safe release of residual gases using controlled venting systems.
+              </p>
+            </div>
+          </div>
+
+          <div class="pf-step">
+            <div class="pf-num">03</div>
+            <div class="pf-content">
+              <h4>Safety Monitoring</h4>
+              <p>
+                Continuous monitoring of pressure levels and gas discharge process.
+              </p>
+            </div>
+          </div>
+
+          <div class="pf-step">
+            <div class="pf-num">04</div>
+            <div class="pf-content">
+              <h4>Preparation for Next Stage</h4>
+              <p>
+                Preparing tanks for cleaning, testing, or maintenance.
+              </p>
+            </div>
+          </div>
+
+          <div class="pf-step">
+            <div class="pf-num">05</div>
+            <div class="pf-content">
+              <h4>Final Safety Clearance</h4>
+              <p>
+                Ensuring tanks are safe and compliant for further operations or transport.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- INDUSTRIES -->
+    <section class="industries-futuristic">
+      <div class="if-container">
+
+        <div class="if-header">
+          <span class="if-tag">INDUSTRIES WE SERVE</span>
+          <h2>Supporting Gas Transport & Industrial Logistics</h2>
           <p>
-            Continuous monitoring of pressure levels and gas discharge process.
+            Our gas tank support services cater to industries handling pressurized gases
+            and hazardous cargo through NSA logistics corridors.
           </p>
         </div>
-      </div>
 
-      <div class="pf-step">
-        <div class="pf-num">04</div>
-        <div class="pf-content">
-          <h4>Preparation for Next Stage</h4>
-          <p>
-            Preparing tanks for cleaning, testing, or maintenance.
-          </p>
+        <div class="if-grid">
+
+          <div class="if-card">
+            <i class="fa-solid fa-wind"></i>
+            <h4>Gas Transport</h4>
+            <p>Safe handling of gas tank containers.</p>
+          </div>
+
+          <div class="if-card">
+            <i class="fa-solid fa-industry"></i>
+            <h4>Industrial Gases</h4>
+            <p>Support for compressed and liquefied gases.</p>
+          </div>
+
+          <div class="if-card">
+            <i class="fa-solid fa-flask"></i>
+            <h4>Chemical Gas Logistics</h4>
+            <p>Handling of chemical gas tank containers.</p>
+          </div>
+
+          <div class="if-card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h4>Hazardous Cargo</h4>
+            <p>Safe operations for hazardous gas transport.</p>
+          </div>
+
+          <div class="if-card">
+            <i class="fa-solid fa-cogs"></i>
+            <h4>Industrial Operations</h4>
+            <p>Support for gas usage in industrial processes.</p>
+          </div>
+
         </div>
-      </div>
 
-      <div class="pf-step">
-        <div class="pf-num">05</div>
-        <div class="pf-content">
-          <h4>Final Safety Clearance</h4>
+      </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta-premium">
+      <div class="cta-inner">
+
+        <div class="cta-content">
+          <h2>Need Safe Gas Tank Handling Near NSA?</h2>
+
           <p>
-            Ensuring tanks are safe and compliant for further operations or transport.
+            Partner with Krestar Inc. for reliable, compliant, and safe
+            gas tank container support services in Uran.
           </p>
+
+          <div class="cta-actions">
+            <a href="contact.html" class="cta-btn primary">Request Support</a>
+            <a href="tel:+919920350385" class="cta-btn secondary">Call Now</a>
+          </div>
         </div>
+
       </div>
+    </section>
 
-    </div>
+  </main>
 
-  </div>
-</section>
+  <div id="footer"></div>
 
+  <script>
+    const counters = document.querySelectorAll('.counter');
 
-<!-- INDUSTRIES -->
-<section class="industries-futuristic">
-  <div class="if-container">
+    const runCounters = () => {
+      counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+        let count = 0;
+        const speed = target / 80;
 
-    <div class="if-header">
-      <span class="if-tag">INDUSTRIES WE SERVE</span>
-      <h2>Supporting Gas Transport & Industrial Logistics</h2>
-      <p>
-        Our gas tank support services cater to industries handling pressurized gases
-        and hazardous cargo through JNPT logistics corridors.
-      </p>
-    </div>
+        const update = () => {
+          if (count < target) {
+            count += speed;
+            counter.innerText = Math.ceil(count) + (target >= 100 ? '+' : '');
+            requestAnimationFrame(update);
+          } else {
+            counter.innerText = target + (target >= 100 ? '+' : '');
+          }
+        };
 
-    <div class="if-grid">
-
-      <div class="if-card">
-        <i class="fa-solid fa-wind"></i>
-        <h4>Gas Transport</h4>
-        <p>Safe handling of gas tank containers.</p>
-      </div>
-
-      <div class="if-card">
-        <i class="fa-solid fa-industry"></i>
-        <h4>Industrial Gases</h4>
-        <p>Support for compressed and liquefied gases.</p>
-      </div>
-
-      <div class="if-card">
-        <i class="fa-solid fa-flask"></i>
-        <h4>Chemical Gas Logistics</h4>
-        <p>Handling of chemical gas tank containers.</p>
-      </div>
-
-      <div class="if-card">
-        <i class="fa-solid fa-shield-halved"></i>
-        <h4>Hazardous Cargo</h4>
-        <p>Safe operations for hazardous gas transport.</p>
-      </div>
-
-      <div class="if-card">
-        <i class="fa-solid fa-cogs"></i>
-        <h4>Industrial Operations</h4>
-        <p>Support for gas usage in industrial processes.</p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- CTA -->
-<section class="cta-premium">
-  <div class="cta-inner">
-
-    <div class="cta-content">
-      <h2>Need Safe Gas Tank Handling Near JNPT?</h2>
-
-      <p>
-        Partner with Krestar Inc. for reliable, compliant, and safe
-        gas tank container support services in Uran.
-      </p>
-
-      <div class="cta-actions">
-        <a href="contact.html" class="cta-btn primary">Request Support</a>
-        <a href="tel:+919920350385" class="cta-btn secondary">Call Now</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-</main>
-
-<div id="footer"></div>
-
-<script>
-const counters = document.querySelectorAll('.counter');
-
-const runCounters = () => {
-  counters.forEach(counter => {
-    const target = +counter.getAttribute('data-target');
-    let count = 0;
-    const speed = target / 80;
-
-    const update = () => {
-      if (count < target) {
-        count += speed;
-        counter.innerText = Math.ceil(count) + (target >= 100 ? '+' : '');
-        requestAnimationFrame(update);
-      } else {
-        counter.innerText = target + (target >= 100 ? '+' : '');
-      }
+        update();
+      });
     };
 
-    update();
-  });
-};
+    const observer = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting) {
+        runCounters();
+        observer.disconnect();
+      }
+    });
 
-const observer = new IntersectionObserver(entries => {
-  if(entries[0].isIntersecting){
-    runCounters();
-    observer.disconnect();
-  }
-});
-
-observer.observe(document.querySelector('.scale-premium'));
-</script>
+    observer.observe(document.querySelector('.scale-premium'));
+  </script>
 
 </body>
+
 </html>

@@ -1,792 +1,789 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Gallery – ISO Tank Facility | Krestar Inc</title>
-<meta name="description" content="Explore our ISO tank cleaning, repair and storage facility in Uran near JNPT.">
-<link rel="icon" type="image/x-icon" href="img/krestar-best-favicon.png">
-<link rel="stylesheet" href="assets/styles.css">
-<script src="assets/script.js" defer></script>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery – ISO Tank Facility | Krestar Inc</title>
+  <meta name="description" content="Explore our ISO tank cleaning, repair and storage facility in Uran near NSA.">
+  <link rel="icon" type="image/x-icon" href="img/krestar-best-favicon.png">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-/* =========================================
+    /* =========================================
    GALLERY PAGE CSS - KRESTAR INC
 ========================================= */
 
-body{
-    background:#07152b;
-    overflow-x:hidden;
-    font-family:'Barlow', sans-serif;
-}
+    body {
+      background: #07152b;
+      overflow-x: hidden;
+      font-family: 'Barlow', sans-serif;
+    }
 
-/* =========================================
+    /* =========================================
    HEADER SUPPORT
 ========================================= */
 
-#header{
-    position:relative;
-    z-index:9999;
-}
-
-/* SHIFT HERO CONTENT SLIGHTLY RIGHT */
-
-#gallery-hero .hero-content{
-    padding-left:80px;
-}
-
-@media(max-width:768px){
-
-    #gallery-hero .hero-content{
-        padding-left:0;
+    #header {
+      position: relative;
+      z-index: 9999;
     }
 
-}
-/* =========================================
+    /* SHIFT HERO CONTENT SLIGHTLY RIGHT */
+
+    #gallery-hero .hero-content {
+      padding-left: 80px;
+    }
+
+    @media(max-width:768px) {
+
+      #gallery-hero .hero-content {
+        padding-left: 0;
+      }
+
+    }
+
+    /* =========================================
    RESPONSIVE
 ========================================= */
 
-@media(max-width:992px){
+    @media(max-width:992px) {
 
-    .gallery-hero .hero-title{
-        font-size:68px;
+      .gallery-hero .hero-title {
+        font-size: 68px;
+      }
+
     }
 
-}
+    @media(max-width:768px) {
 
-@media(max-width:768px){
+      .gallery-hero .hero-slide {
+        min-height: 620px;
+      }
 
-    .gallery-hero .hero-slide{
-        min-height:620px;
+      .gallery-hero .hero-title {
+        font-size: 52px;
+      }
+
+      .gallery-hero .hero-desc {
+        font-size: 16px;
+      }
+
+      .gallery-hero .hero-social {
+        display: none;
+      }
+
     }
 
-    .gallery-hero .hero-title{
-        font-size:52px;
+    @media(max-width:480px) {
+
+      .gallery-hero .hero-title {
+        font-size: 42px;
+      }
+
+      .gallery-hero .btn-work {
+        width: 100%;
+      }
+
     }
 
-    .gallery-hero .hero-desc{
-        font-size:16px;
-    }
-
-    .gallery-hero .hero-social{
-        display:none;
-    }
-
-}
-
-@media(max-width:480px){
-
-    .gallery-hero .hero-title{
-        font-size:42px;
-    }
-
-    .gallery-hero .btn-work{
-        width:100%;
-    }
-
-}
-
-/* =========================================
+    /* =========================================
    GALLERY SECTION
 ========================================= */
 
-.gallery-section{
-    position:relative;
-    padding:100px 0;
+    .gallery-section {
+      position: relative;
+      padding: 100px 0;
 
-    background:
-    radial-gradient(circle at top right,
-    rgba(0,180,255,0.14),
-    transparent 30%),
+      background:
+        radial-gradient(circle at top right,
+          rgba(0, 180, 255, 0.14),
+          transparent 30%),
 
-    linear-gradient(
-    180deg,
-    #0b2347 0%,
-    #12376b 45%,
-    #1a4d8f 100%);
-}
+        linear-gradient(180deg,
+          #0b2347 0%,
+          #12376b 45%,
+          #1a4d8f 100%);
+    }
 
-/* =========================================
+    /* =========================================
    SECTION HEADING
 ========================================= */
 
-.section-head{
-    text-align:center;
-    margin-bottom:55px;
-}
+    .section-head {
+      text-align: center;
+      margin-bottom: 55px;
+    }
 
-.section-tag{
-    color:#00b4ff;
+    .section-tag {
+      color: #00b4ff;
 
-    font-size:14px;
-    font-weight:700;
-    letter-spacing:2px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 2px;
 
-    margin-bottom:14px;
+      margin-bottom: 14px;
 
-    text-transform:uppercase;
-}
+      text-transform: uppercase;
+    }
 
-.section-head h2{
-    color:#fff;
+    .section-head h2 {
+      color: #fff;
 
-    font-size:58px;
-    line-height:1.1;
+      font-size: 58px;
+      line-height: 1.1;
 
-    margin-bottom:16px;
+      margin-bottom: 16px;
 
-    font-family:"Barlow Condensed", sans-serif;
-    text-transform:uppercase;
-    font-weight:800;
-}
+      font-family: "Barlow Condensed", sans-serif;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
 
-.section-head p{
-    color:rgba(255,255,255,0.7);
+    .section-head p {
+      color: rgba(255, 255, 255, 0.7);
 
-    max-width:760px;
-    margin:auto;
+      max-width: 760px;
+      margin: auto;
 
-    line-height:1.8;
-}
+      line-height: 1.8;
+    }
 
-/* =========================================
+    /* =========================================
    FILTER BUTTONS
 ========================================= */
 
-.gallery-filter{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
+    .gallery-filter {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
 
-    gap:14px;
-    margin-bottom:65px;
-}
+      gap: 14px;
+      margin-bottom: 65px;
+    }
 
-.filter-btn{
-    border:none;
+    .filter-btn {
+      border: none;
 
-    background:rgba(255,255,255,0.08);
-    color:#fff;
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
 
-    padding:13px 24px;
-    border-radius:60px;
+      padding: 13px 24px;
+      border-radius: 60px;
 
-    cursor:pointer;
+      cursor: pointer;
 
-    transition:0.35s ease;
+      transition: 0.35s ease;
 
-    font-size:14px;
-    font-weight:700;
-    letter-spacing:0.5px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
 
-    backdrop-filter:blur(10px);
-}
+      backdrop-filter: blur(10px);
+    }
 
-.filter-btn:hover,
-.filter-btn.active{
-    background:linear-gradient(135deg,#0d6efd,#00b4ff);
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: linear-gradient(135deg, #0d6efd, #00b4ff);
 
-    transform:translateY(-3px);
+      transform: translateY(-3px);
 
-    box-shadow:0 15px 35px rgba(0,180,255,0.35);
-}
+      box-shadow: 0 15px 35px rgba(0, 180, 255, 0.35);
+    }
 
-/* =========================================
+    /* =========================================
    GALLERY GRID
 ========================================= */
 
-.gallery-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
 
-    gap:28px;
-}
+      gap: 28px;
+    }
 
-.gallery-item{
-    position:relative;
+    .gallery-item {
+      position: relative;
 
-    overflow:hidden;
+      overflow: hidden;
 
-    border-radius:24px;
+      border-radius: 24px;
 
-    cursor:pointer;
+      cursor: pointer;
 
-    height:320px;
+      height: 320px;
 
-    background:#111827;
+      background: #111827;
 
-    border:1px solid rgba(255,255,255,0.08);
+      border: 1px solid rgba(255, 255, 255, 0.08);
 
-    transition:0.45s ease;
-}
+      transition: 0.45s ease;
+    }
 
-.gallery-item:hover{
-    transform:translateY(-8px);
+    .gallery-item:hover {
+      transform: translateY(-8px);
 
-    box-shadow:0 30px 60px rgba(0,0,0,0.45);
-}
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
+    }
 
-.gallery-item img{
-    width:100%;
-    height:100%;
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
 
-    object-fit:cover;
+      object-fit: cover;
 
-    transition:0.7s ease;
-}
+      transition: 0.7s ease;
+    }
 
-.gallery-item:hover img{
-    transform:scale(1.12);
-}
+    .gallery-item:hover img {
+      transform: scale(1.12);
+    }
 
-/* =========================================
+    /* =========================================
    OVERLAY
 ========================================= */
 
-.gallery-overlay{
-    position:absolute;
-    inset:0;
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
 
-    background:linear-gradient(
-        to top,
-        rgba(0),
-        rgba(2,12,32,0.2)
-    );
+      background: linear-gradient(to top,
+          rgba(0),
+          rgba(2, 12, 32, 0.2));
 
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-end;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
 
-    padding:30px;
-}
+      padding: 30px;
+    }
 
-.gallery-category{
-    color:#00b4ff;
+    .gallery-category {
+      color: #00b4ff;
 
-    font-size:13px;
-    font-weight:700;
-    letter-spacing:1px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
 
-    margin-bottom:8px;
+      margin-bottom: 8px;
 
-    text-transform:uppercase;
-}
+      text-transform: uppercase;
+    }
 
-.gallery-title{
-    color:#fff;
+    .gallery-title {
+      color: #fff;
 
-    font-size:30px;
-    font-weight:800;
-    line-height:1.1;
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 1.1;
 
-    font-family:"Barlow Condensed", sans-serif;
-    text-transform:uppercase;
-}
+      font-family: "Barlow Condensed", sans-serif;
+      text-transform: uppercase;
+    }
 
-.gallery-icon{
-    position:absolute;
+    .gallery-icon {
+      position: absolute;
 
-    top:22px;
-    right:22px;
+      top: 22px;
+      right: 22px;
 
-    width:52px;
-    height:52px;
+      width: 52px;
+      height: 52px;
 
-    border-radius:50%;
+      border-radius: 50%;
 
-    background:rgba(255,255,255,0.14);
+      background: rgba(255, 255, 255, 0.14);
 
-    backdrop-filter:blur(12px);
+      backdrop-filter: blur(12px);
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-    color:#fff;
-    font-size:16px;
+      color: #fff;
+      font-size: 16px;
 
-    transform:translateY(-10px);
-    opacity:0;
+      transform: translateY(-10px);
+      opacity: 0;
 
-    transition:0.4s ease;
-}
+      transition: 0.4s ease;
+    }
 
-.gallery-item:hover .gallery-icon{
-    opacity:1;
-    transform:translateY(0);
-}
+    .gallery-item:hover .gallery-icon {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
-/* =========================================
+    /* =========================================
    LIGHTBOX
 ========================================= */
 
-.lightbox{
-    position:fixed;
-    inset:0;
+    .lightbox {
+      position: fixed;
+      inset: 0;
 
-    background:rgba(0,0,0,0.95);
+      background: rgba(0, 0, 0, 0.95);
 
-    display:none;
-    align-items:center;
-    justify-content:center;
+      display: none;
+      align-items: center;
+      justify-content: center;
 
-    z-index:99999;
+      z-index: 99999;
 
-    padding:20px;
-}
+      padding: 20px;
+    }
 
-.lightbox.active{
-    display:flex;
-}
+    .lightbox.active {
+      display: flex;
+    }
 
-.lightbox img{
-    max-width:92%;
-    max-height:88vh;
+    .lightbox img {
+      max-width: 92%;
+      max-height: 88vh;
 
-    border-radius:16px;
+      border-radius: 16px;
 
-    border:3px solid rgba(255,255,255,0.12);
-}
+      border: 3px solid rgba(255, 255, 255, 0.12);
+    }
 
-.lightbox-close{
-    position:absolute;
+    .lightbox-close {
+      position: absolute;
 
-    top:30px;
-    right:40px;
+      top: 30px;
+      right: 40px;
 
-    font-size:44px;
+      font-size: 44px;
 
-    color:#fff;
+      color: #fff;
 
-    cursor:pointer;
-}
+      cursor: pointer;
+    }
 
-/* =========================================
+    /* =========================================
    ANIMATION
 ========================================= */
 
-.gallery-item{
-    animation:fadeUp 0.7s ease;
-}
-
-@keyframes fadeUp{
-
-    from{
-        opacity:0;
-        transform:translateY(40px);
+    .gallery-item {
+      animation: fadeUp 0.7s ease;
     }
 
-    to{
-        opacity:1;
-        transform:translateY(0);
+    @keyframes fadeUp {
+
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
     }
 
-}
-
-/* =========================================
+    /* =========================================
    RESPONSIVE
 ========================================= */
 
-@media(max-width:1200px){
+    @media(max-width:1200px) {
 
-    .gallery-grid{
-        grid-template-columns:repeat(2,1fr);
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
     }
 
-}
+    @media(max-width:992px) {
 
-@media(max-width:992px){
+      .gallery-hero h1 {
+        font-size: 58px;
+      }
 
-    .gallery-hero h1{
-        font-size:58px;
+      .section-head h2 {
+        font-size: 46px;
+      }
+
     }
 
-    .section-head h2{
-        font-size:46px;
+    @media(max-width:768px) {
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-item {
+        height: 280px;
+      }
+
+      .gallery-hero {
+        min-height: 380px;
+        padding-top: 120px;
+      }
+
+      .gallery-hero h1 {
+        font-size: 44px;
+      }
+
+      .gallery-hero p {
+        font-size: 16px;
+      }
+
+      .section-head h2 {
+        font-size: 38px;
+      }
+
+      .gallery-filter {
+        gap: 10px;
+      }
+
+      .filter-btn {
+        padding: 11px 18px;
+        font-size: 13px;
+      }
+
     }
 
-}
+    @media(max-width:480px) {
 
-@media(max-width:768px){
+      .gallery-hero h1 {
+        font-size: 36px;
+      }
 
-    .gallery-grid{
-        grid-template-columns:1fr;
+      .section-head h2 {
+        font-size: 32px;
+      }
+
+      .gallery-title {
+        font-size: 24px;
+      }
+
+      .gallery-overlay {
+        padding: 22px;
+      }
+
     }
-
-    .gallery-item{
-        height:280px;
-    }
-
-    .gallery-hero{
-        min-height:380px;
-        padding-top:120px;
-    }
-
-    .gallery-hero h1{
-        font-size:44px;
-    }
-
-    .gallery-hero p{
-        font-size:16px;
-    }
-
-    .section-head h2{
-        font-size:38px;
-    }
-
-    .gallery-filter{
-        gap:10px;
-    }
-
-    .filter-btn{
-        padding:11px 18px;
-        font-size:13px;
-    }
-
-}
-
-@media(max-width:480px){
-
-    .gallery-hero h1{
-        font-size:36px;
-    }
-
-    .section-head h2{
-        font-size:32px;
-    }
-
-    .gallery-title{
-        font-size:24px;
-    }
-
-    .gallery-overlay{
-        padding:22px;
-    }
-
-}
-
-
   </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-<div id="header"></div>
+  <!-- HEADER -->
+  <div id="header"></div>
 
-<!-- HERO -->
-<!-- HERO -->
-<section class="hero" id="gallery-hero">
+  <!-- HERO -->
+  <!-- HERO -->
+  <section class="hero" id="gallery-hero">
 
     <div class="hero-slides">
 
-        <div class="hero-slide active"
-        style="background-image:
+      <div class="hero-slide active" style="background-image:
         linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
         url('img/gallery-banner.webp');">
 
-            <div class="container hero-content">
+        <div class="container hero-content">
 
-                <div class="hero-badge">
-                    KRESTAR GALLERY
-                </div>
+          <div class="hero-badge">
+            KRESTAR GALLERY
+          </div>
 
-                <h1 class="hero-title">
-                    TANK SOLUTIONS
-                    <br>
-                    <em>Gallery</em>
-                </h1>
+          <h1 class="hero-title">
+            TANK SOLUTIONS
+            <br>
+            <em>Gallery</em>
+          </h1>
 
-                <p class="hero-desc">
-                    Explore our ISO tank cleaning,
-                    repair, testing, storage and
-                    logistics infrastructure.
-                </p>
+          <p class="hero-desc">
+            Explore our ISO tank cleaning,
+            repair, testing, storage and
+            logistics infrastructure.
+          </p>
 
-                <div class="hero-actions">
+          <div class="hero-actions">
 
-                    <a href="contact.html" class="btn-work">
-                        CONTACT US
-                    </a>
+            <a href="contact.html" class="btn-work">
+              CONTACT US
+            </a>
 
-                    <a href="services.html" class="btn-work">
-                        OUR SERVICES
-                    </a>
+            <a href="services.html" class="btn-work">
+              OUR SERVICES
+            </a>
 
-                </div>
-
-            </div>
+          </div>
 
         </div>
+
+      </div>
 
     </div>
 
     <div class="hero-social">
-        <a href="#">FACEBOOK <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#">FACEBOOK <i class="fa-solid fa-arrow-right"></i></a>
 
-        <a href="#">INSTAGRAM <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#">INSTAGRAM <i class="fa-solid fa-arrow-right"></i></a>
 
-        <a href="#">TWITTER <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#">TWITTER <i class="fa-solid fa-arrow-right"></i></a>
     </div>
 
-</section>
+  </section>
 
-<!-- GALLERY -->
-<section class="gallery-section">
+  <!-- GALLERY -->
+  <section class="gallery-section">
 
-  <div class="container">
+    <div class="container">
 
-    <div class="section-head">
-      <div class="section-tag">KRESTAR INC</div>
-      <h2>Our Operations & Infrastructure</h2>
+      <div class="section-head">
+        <div class="section-tag">KRESTAR INC</div>
+        <h2>Our Operations & Infrastructure</h2>
 
-      <p>
-        Showcasing our modern ISO tank facility, depot services, inspection systems,
-        maintenance operations and logistics support infrastructure.
-      </p>
+        <p>
+          Showcasing our modern ISO tank facility, depot services, inspection systems,
+          maintenance operations and logistics support infrastructure.
+        </p>
+      </div>
+
+      <!-- FILTER -->
+      <div class="gallery-filter">
+
+        <button class="filter-btn active" data-filter="all">ALL</button>
+
+        <button class="filter-btn" data-filter="cleaning">TANK CLEANING</button>
+
+        <button class="filter-btn" data-filter="repair">REPAIR</button>
+
+        <button class="filter-btn" data-filter="inspection">INSPECTION</button>
+
+        <button class="filter-btn" data-filter="storage">STORAGE</button>
+
+        <button class="filter-btn" data-filter="gas-tanks">GAS TANKS</button>
+
+      </div>
+
+      <!-- GRID -->
+      <div class="gallery-grid">
+
+        <!-- ITEM -->
+        <div class="gallery-item cleaning">
+          <img src="img/iso-tank-cleaning.webp" alt="iso-tank-cleaning">
+          <div class="gallery-overlay">
+            <div class="gallery-category">Tank Cleaning</div>
+            <div class="gallery-title">ISO Tank Cleaning</div>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="gallery-item cleaning">
+          <img src="img/krestar-tank-cleaning.webp" alt="krestar-tank-cleaning">
+          <div class="gallery-overlay">
+            <div class="gallery-category">Tank Cleaning</div>
+            <div class="gallery-title">ISO Tank Cleaning</div>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="gallery-item cleaning">
+          <img src="img/iso-tank-cleaning-banner.webp" alt="iso-tank-cleaning-banner">
+          <div class="gallery-overlay">
+            <div class="gallery-category">Tank Cleaning</div>
+            <div class="gallery-title">ISO Tank Cleaning</div>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="gallery-item repair">
+          <img src="img/tank-repair-maintenance.webp" alt="tank-repair-maintenance">
+          <div class="gallery-overlay">
+            <div class="gallery-category">Maintenance</div>
+            <div class="gallery-title">Tank Repair Facility</div>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="gallery-item repair">
+          <img src="img/krestar-tank-repairing-and-maintenance.webp" alt="tank-repair-maintenance">
+          <div class="gallery-overlay">
+            <div class="gallery-category">Maintenance</div>
+            <div class="gallery-title">Tank Repair Facility</div>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="gallery-item repair">
+          <img src="img/repair.webp" alt="tank-repair-maintenance">
+          <div class="gallery-overlay">
+            <div class="gallery-category">Maintenance</div>
+            <div class="gallery-title">Tank Repair Facility</div>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="gallery-item inspection">
+          <img src="img/testing-inspection.webp" alt="testing-inspection">
+          <div class="gallery-overlay">
+            <div class="gallery-category">Inspection</div>
+            <div class="gallery-title">Testing & Inspection</div>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="gallery-item inspection">
+          <img src="img/krestar-tank-testing.webp" alt="testing-inspection">
+          <div class="gallery-overlay">
+            <div class="gallery-category">Inspection</div>
+            <div class="gallery-title">Testing & Inspection</div>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="gallery-item inspection">
+          <img src="img/testing.webp" alt="testing-inspection">
+          <div class="gallery-overlay">
+            <div class="gallery-category">Inspection</div>
+            <div class="gallery-title">Testing & Inspection</div>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="gallery-item storage">
+          <img src="img/storage-depot-services.webp" alt="storage-depot-services">
+          <div class="gallery-overlay">
+            <div class="gallery-category">Storage</div>
+            <div class="gallery-title">Depot Storage Area</div>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="gallery-item storage">
+          <img src="img/krestar-tank-storage.webp" alt="storage-depot-services">
+          <div class="gallery-overlay">
+            <div class="gallery-category">Storage</div>
+            <div class="gallery-title">Depot Storage Area</div>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="gallery-item storage">
+          <img src="img/storage.webp" alt="storage-depot-services">
+          <div class="gallery-overlay">
+            <div class="gallery-category">Storage</div>
+            <div class="gallery-title">Depot Storage Area</div>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="gallery-item gas-tanks">
+          <img src="img/gas-tank-container-support.webp" alt="gas-tank-container-support">
+          <div class="gallery-overlay">
+            <div class="gallery-category">GAS TANKS</div>
+            <div class="gallery-title">Gas Tank Support</div>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="gallery-item gas-tanks">
+          <img src="img/gas-tank-support.webp" alt="gas-tank-container-support">
+          <div class="gallery-overlay">
+            <div class="gallery-category">GAS TANKS</div>
+            <div class="gallery-title">Gas Tank Support</div>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="gallery-item gas-tanks">
+          <img src="img/gas-tank-container-support-banner.webp" alt="gas-tank-container-support">
+          <div class="gallery-overlay">
+            <div class="gallery-category">GAS TANKS</div>
+            <div class="gallery-title">Gas Tank Support</div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
 
-    <!-- FILTER -->
-    <div class="gallery-filter">
+  </section>
 
-      <button class="filter-btn active" data-filter="all">ALL</button>
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
 
-      <button class="filter-btn" data-filter="cleaning">TANK CLEANING</button>
+    <span class="lightbox-close" id="lightboxClose">
+      &times;
+    </span>
 
-      <button class="filter-btn" data-filter="repair">REPAIR</button>
-
-      <button class="filter-btn" data-filter="inspection">INSPECTION</button>
-
-      <button class="filter-btn" data-filter="storage">STORAGE</button>
-
-      <button class="filter-btn" data-filter="gas-tanks">GAS TANKS</button>
-
-    </div>
-
-    <!-- GRID -->
-    <div class="gallery-grid">
-
-      <!-- ITEM -->
-      <div class="gallery-item cleaning">
-        <img src="img/iso-tank-cleaning.webp" alt="iso-tank-cleaning">
-        <div class="gallery-overlay">
-          <div class="gallery-category">Tank Cleaning</div>
-          <div class="gallery-title">ISO Tank Cleaning</div>
-        </div>
-      </div>
-
-      <!-- ITEM -->
-      <div class="gallery-item cleaning">
-        <img src="img/krestar-tank-cleaning.webp" alt="krestar-tank-cleaning">
-        <div class="gallery-overlay">
-          <div class="gallery-category">Tank Cleaning</div>
-          <div class="gallery-title">ISO Tank Cleaning</div>
-        </div>
-      </div>
-
-      <!-- ITEM -->
-      <div class="gallery-item cleaning">
-        <img src="img/iso-tank-cleaning-banner.webp" alt="iso-tank-cleaning-banner">
-        <div class="gallery-overlay">
-          <div class="gallery-category">Tank Cleaning</div>
-          <div class="gallery-title">ISO Tank Cleaning</div>
-        </div>
-      </div>
-
-      <!-- ITEM -->
-      <div class="gallery-item repair">
-        <img src="img/tank-repair-maintenance.webp" alt="tank-repair-maintenance">
-        <div class="gallery-overlay">
-          <div class="gallery-category">Maintenance</div>
-          <div class="gallery-title">Tank Repair Facility</div>
-        </div>
-      </div>
-
-      <!-- ITEM -->
-      <div class="gallery-item repair">
-        <img src="img/krestar-tank-repairing-and-maintenance.webp" alt="tank-repair-maintenance">
-        <div class="gallery-overlay">
-          <div class="gallery-category">Maintenance</div>
-          <div class="gallery-title">Tank Repair Facility</div>
-        </div>
-      </div>
-
-      <!-- ITEM -->
-      <div class="gallery-item repair">
-        <img src="img/repair.webp" alt="tank-repair-maintenance">
-        <div class="gallery-overlay">
-          <div class="gallery-category">Maintenance</div>
-          <div class="gallery-title">Tank Repair Facility</div>
-        </div>
-      </div>
-
-      <!-- ITEM -->
-      <div class="gallery-item inspection">
-        <img src="img/testing-inspection.webp" alt="testing-inspection">
-        <div class="gallery-overlay">
-          <div class="gallery-category">Inspection</div>
-          <div class="gallery-title">Testing & Inspection</div>
-        </div>
-      </div>
-
-      <!-- ITEM -->
-      <div class="gallery-item inspection">
-        <img src="img/krestar-tank-testing.webp" alt="testing-inspection">
-        <div class="gallery-overlay">
-          <div class="gallery-category">Inspection</div>
-          <div class="gallery-title">Testing & Inspection</div>
-        </div>
-      </div>
-
-      <!-- ITEM -->
-      <div class="gallery-item inspection">
-        <img src="img/testing.webp" alt="testing-inspection">
-        <div class="gallery-overlay">
-          <div class="gallery-category">Inspection</div>
-          <div class="gallery-title">Testing & Inspection</div>
-        </div>
-      </div>
-
-      <!-- ITEM -->
-      <div class="gallery-item storage">
-        <img src="img/storage-depot-services.webp" alt="storage-depot-services">
-        <div class="gallery-overlay">
-          <div class="gallery-category">Storage</div>
-          <div class="gallery-title">Depot Storage Area</div>
-        </div>
-      </div>
-
-      <!-- ITEM -->
-      <div class="gallery-item storage">
-        <img src="img/krestar-tank-storage.webp" alt="storage-depot-services">
-        <div class="gallery-overlay">
-          <div class="gallery-category">Storage</div>
-          <div class="gallery-title">Depot Storage Area</div>
-        </div>
-      </div>
-
-      <!-- ITEM -->
-      <div class="gallery-item storage">
-        <img src="img/storage.webp" alt="storage-depot-services">
-        <div class="gallery-overlay">
-          <div class="gallery-category">Storage</div>
-          <div class="gallery-title">Depot Storage Area</div>
-        </div>
-      </div>
-
-      <!-- ITEM -->
-      <div class="gallery-item gas-tanks">
-        <img src="img/gas-tank-container-support.webp" alt="gas-tank-container-support">
-        <div class="gallery-overlay">
-          <div class="gallery-category">GAS TANKS</div>
-          <div class="gallery-title">Gas Tank Support</div>
-        </div>
-      </div>
-
-      <!-- ITEM -->
-      <div class="gallery-item gas-tanks">
-        <img src="img/gas-tank-support.webp" alt="gas-tank-container-support">
-        <div class="gallery-overlay">
-          <div class="gallery-category">GAS TANKS</div>
-          <div class="gallery-title">Gas Tank Support</div>
-        </div>
-      </div>
-
-      <!-- ITEM -->
-      <div class="gallery-item gas-tanks">
-        <img src="img/gas-tank-container-support-banner.webp" alt="gas-tank-container-support">
-        <div class="gallery-overlay">
-          <div class="gallery-category">GAS TANKS</div>
-          <div class="gallery-title">Gas Tank Support</div>
-        </div>
-      </div>
-
-    </div>
+    <img src="" id="lightboxImg">
 
   </div>
 
-</section>
+  <!-- FOOTER -->
+  <div id="footer"></div>
 
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox">
-
-  <span class="lightbox-close" id="lightboxClose">
-    &times;
-  </span>
-
-  <img src="" id="lightboxImg">
-
-</div>
-
-<!-- FOOTER -->
-<div id="footer"></div>
-
-<!-- SCRIPTS -->
-<script>
+  <!-- SCRIPTS -->
+  <script>
 
 
-  /* FILTER */
+    /* FILTER */
 
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const galleryItems = document.querySelectorAll('.gallery-item');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
 
-  filterBtns.forEach(btn => {
+    filterBtns.forEach(btn => {
 
-    btn.addEventListener('click', () => {
+      btn.addEventListener('click', () => {
 
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
 
-      const filter = btn.getAttribute('data-filter');
+        const filter = btn.getAttribute('data-filter');
 
-      galleryItems.forEach(item => {
+        galleryItems.forEach(item => {
 
-        if(filter === 'all'){
-          item.style.display = 'block';
-        }
-        else if(item.classList.contains(filter)){
-          item.style.display = 'block';
-        }
-        else{
-          item.style.display = 'none';
-        }
+          if (filter === 'all') {
+            item.style.display = 'block';
+          }
+          else if (item.classList.contains(filter)) {
+            item.style.display = 'block';
+          }
+          else {
+            item.style.display = 'none';
+          }
+
+        });
 
       });
 
     });
 
-  });
 
+    /* LIGHTBOX */
 
-  /* LIGHTBOX */
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const closeBtn = document.getElementById('lightboxClose');
 
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightboxImg');
-  const closeBtn = document.getElementById('lightboxClose');
+    document.querySelectorAll('.gallery-item img').forEach(img => {
 
-  document.querySelectorAll('.gallery-item img').forEach(img => {
+      img.addEventListener('click', () => {
 
-    img.addEventListener('click', () => {
+        lightbox.classList.add('active');
+        lightboxImg.src = img.src;
 
-      lightbox.classList.add('active');
-      lightboxImg.src = img.src;
+      });
 
     });
 
-  });
-
-  closeBtn.addEventListener('click', () => {
-    lightbox.classList.remove('active');
-  });
-
-  lightbox.addEventListener('click', (e) => {
-
-    if(e.target === lightbox){
+    closeBtn.addEventListener('click', () => {
       lightbox.classList.remove('active');
-    }
+    });
 
-  });
-</script>
+    lightbox.addEventListener('click', (e) => {
+
+      if (e.target === lightbox) {
+        lightbox.classList.remove('active');
+      }
+
+    });
+  </script>
 </body>
+
 </html>
