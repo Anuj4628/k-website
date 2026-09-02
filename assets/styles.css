@@ -6442,7 +6442,7 @@ grid-template-columns:1fr;
 }
 
 .flip-back::before {
-    content: "KRESTAR LOGISTICS";
+    
     position: absolute;
     bottom: 24px;
     left: 24px;
