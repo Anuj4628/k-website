@@ -174,25 +174,33 @@ function initNavigation() {
     }
 
     if (dropdownBtn) {
+      event.preventDefault();
       const parentLi = dropdownBtn.closest(".has-menu");
       if (parentLi) {
-        if (window.innerWidth <= 1080 || ("ontouchstart" in window)) {
-          event.preventDefault();
-          const wasOpen = parentLi.classList.contains("is-open");
-          // Close other open submenus
-          document.querySelectorAll(".has-menu").forEach((li) => {
-            if (li !== parentLi) li.classList.remove("is-open");
-          });
-          parentLi.classList.toggle("is-open", !wasOpen);
-          dropdownBtn.setAttribute("aria-expanded", String(!wasOpen));
-        }
+        const wasOpen = parentLi.classList.contains("is-open");
+        // Close other open submenus
+        document.querySelectorAll(".has-menu").forEach((li) => {
+          if (li !== parentLi) li.classList.remove("is-open");
+        });
+        parentLi.classList.toggle("is-open", !wasOpen);
+        dropdownBtn.setAttribute("aria-expanded", String(!wasOpen));
       }
       return;
     }
 
     if (navLinkItem) {
+      document.querySelectorAll(".has-menu").forEach((li) => li.classList.remove("is-open"));
       closeMobileMenu();
       return;
+    }
+
+    // Close open dropdowns when clicking outside
+    if (!event.target.closest(".has-menu")) {
+      document.querySelectorAll(".has-menu").forEach((li) => {
+        li.classList.remove("is-open");
+        const toggle = li.querySelector(".dropdown-toggle");
+        if (toggle) toggle.setAttribute("aria-expanded", "false");
+      });
     }
 
     // Close when clicking outside navbar container on mobile

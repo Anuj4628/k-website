@@ -309,10 +309,12 @@ select {
 }
 
 .has-menu:hover .menu-flyout,
-.has-menu:focus-within .menu-flyout {
+.has-menu:focus-within .menu-flyout,
+.has-menu.is-open .menu-flyout {
   opacity: 1;
   transform: translateY(0);
   visibility: visible;
+  pointer-events: auto;
 }
 
 .nav-actions {
@@ -4595,7 +4597,7 @@ h4 {
 
     .ci-item {
       grid-template-columns: 52px 1fr;
-      align-items: center;
+      align-items: flex-start;
       padding: 18px;
       border: 1px solid var(--line);
       border-radius: 18px;
@@ -4624,6 +4626,51 @@ h4 {
     .ci-item span {
       color: var(--muted);
       font-size: 14px;
+    }
+
+    .ci-details {
+      margin-top: 4px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .ci-address {
+      color: #475569;
+      font-size: 13.5px;
+      line-height: 1.45;
+      font-weight: 500;
+      display: block;
+    }
+
+    .ci-contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-top: 4px;
+      padding-top: 6px;
+      border-top: 1px dashed var(--line);
+    }
+
+    .ci-contact-info a {
+      color: #0f172a;
+      font-size: 14px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.2s ease;
+    }
+
+    .ci-contact-info a i {
+      color: var(--accent);
+      font-size: 13px;
+      width: 14px;
+      text-align: center;
+    }
+
+    .ci-contact-info a:hover {
+      color: var(--accent);
     }
 
     .contact-form {
