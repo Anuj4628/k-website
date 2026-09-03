@@ -8601,3 +8601,473 @@ body.nav-open {
     margin-top: 8px !important;
   }
 }
+
+/* ==========================================================================
+   ENHANCED SERVICE PAGES UI & CARDS DESIGN (GLOBAL REFINEMENTS)
+   ========================================================================== */
+
+/* Typography & General Styling for Service Sections */
+.service-page-section h1,
+.service-page-section h2,
+.service-page-section h3,
+.service-page-section h4,
+.services-premium h2,
+.services-premium h4,
+.intro-redesign h2,
+.intro-redesign h3,
+.intro-premium h2,
+.scale-premium h2,
+.scale-premium h3,
+.process-flow-v2 h2,
+.process-flow-v2 h4,
+.industries-futuristic h2,
+.industries-futuristic h4,
+.cta-premium h2 {
+  font-family: 'Plus Jakarta Sans', 'Sora', sans-serif !important;
+  letter-spacing: -0.025em !important;
+}
+
+/* Service Pill Badges (Screenshots 2 & 4) */
+.service-points {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 14px !important;
+  margin-top: 20px !important;
+}
+
+.service-pill {
+  padding: 16px 20px !important;
+  border-radius: 16px !important;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.service-pill i {
+  color: #6366f1 !important;
+  font-size: 17px !important;
+  transition: transform 0.3s ease, color 0.3s ease !important;
+}
+
+.service-pill:hover {
+  transform: translateY(-4px) !important;
+  border-color: #6366f1 !important;
+  box-shadow: 0 14px 30px rgba(99, 102, 241, 0.15) !important;
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%) !important;
+}
+
+.service-pill:hover i {
+  transform: scale(1.25) !important;
+  color: #f97316 !important;
+}
+
+/* Intro Highlights Pills */
+.intro-highlights {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  margin-top: 26px !important;
+  gap: 14px !important;
+  font-size: 14.5px !important;
+  color: #0f172a !important;
+  font-weight: 700 !important;
+}
+
+.intro-highlights div {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  padding: 14px 18px !important;
+  border-radius: 16px !important;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.03) !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.intro-highlights div i {
+  color: #0284c7 !important;
+  font-size: 18px !important;
+  transition: transform 0.3s ease, color 0.3s ease !important;
+}
+
+.intro-highlights div:hover {
+  border-color: #6366f1 !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 12px 28px rgba(99, 102, 241, 0.12) !important;
+}
+
+.intro-highlights div:hover i {
+  color: #f97316 !important;
+  transform: scale(1.2) !important;
+}
+
+/* Capabilities Glass Cards (Screenshots 1 & 4) */
+.glass-card {
+  position: relative !important;
+  backdrop-filter: blur(20px) !important;
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%) !important;
+  border-radius: 24px !important;
+  padding: 36px 32px !important;
+  box-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(255, 255, 255, 0.9) inset !important;
+  border: 1px solid rgba(226, 232, 240, 0.9) !important;
+  z-index: 2 !important;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  overflow: hidden !important;
+}
+
+.glass-card::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 4px !important;
+  background: linear-gradient(90deg, #f97316 0%, #6366f1 50%, #0284c7 100%) !important;
+}
+
+.glass-card:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 30px 60px -12px rgba(99, 102, 241, 0.18), 0 0 0 1px rgba(99, 102, 241, 0.15) !important;
+  border-color: rgba(99, 102, 241, 0.3) !important;
+}
+
+.glass-card h4 {
+  margin-bottom: 22px !important;
+  font-size: 21px !important;
+  color: #0f172a !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.01em !important;
+  padding-bottom: 14px !important;
+  border-bottom: 2px solid #f1f5f9 !important;
+}
+
+.glass-card ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 14px !important;
+}
+
+.glass-card ul li {
+  font-size: 15px !important;
+  color: #1e293b !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  font-weight: 600 !important;
+  transition: transform 0.3s ease !important;
+}
+
+.glass-card ul li:hover {
+  transform: translateX(4px) !important;
+  color: #0f172a !important;
+}
+
+.glass-card ul li::before {
+  content: '\f00c' !important;
+  font-family: 'Font Awesome 6 Free' !important;
+  font-weight: 900 !important;
+  color: #ffffff !important;
+  font-size: 11px !important;
+  background: linear-gradient(135deg, #4f46e5, #0284c7) !important;
+  width: 24px !important;
+  height: 24px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.25) !important;
+}
+
+/* Service Card Design Upgrade (Screenshot 3) */
+.service-card {
+  background: #ffffff !important;
+  padding: 38px 32px !important;
+  border-radius: 24px !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02) !important;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.service-card::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 4px !important;
+  background: linear-gradient(90deg, #f97316 0%, #6366f1 50%, #0284c7 100%) !important;
+  opacity: 0.8 !important;
+  transition: height 0.3s ease, opacity 0.3s ease !important;
+}
+
+.service-card:hover {
+  transform: translateY(-8px) !important;
+  border-color: rgba(99, 102, 241, 0.35) !important;
+  box-shadow: 0 25px 55px -10px rgba(99, 102, 241, 0.18), 0 0 0 1px rgba(99, 102, 241, 0.1) !important;
+}
+
+.service-card:hover::before {
+  height: 5px !important;
+  opacity: 1 !important;
+}
+
+.service-icon {
+  width: 62px !important;
+  height: 62px !important;
+  border-radius: 20px !important;
+  background: linear-gradient(135deg, #4f46e5 0%, #0284c7 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 24px !important;
+  margin-bottom: 24px !important;
+  color: #ffffff !important;
+  box-shadow: 0 10px 24px rgba(79, 70, 229, 0.3) !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.service-card:hover .service-icon {
+  background: linear-gradient(135deg, #f97316 0%, #4f46e5 100%) !important;
+  transform: scale(1.1) rotate(5deg) !important;
+  box-shadow: 0 14px 28px rgba(249, 115, 22, 0.35) !important;
+}
+
+.service-card h4 {
+  font-size: 21px !important;
+  margin-bottom: 14px !important;
+  color: #0f172a !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.015em !important;
+}
+
+.service-card p {
+  font-size: 14.5px !important;
+  color: #475569 !important;
+  margin-bottom: 24px !important;
+  line-height: 1.7 !important;
+}
+
+.service-card ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-top: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  border-top: 1px solid #f1f5f9 !important;
+  padding-top: 22px !important;
+}
+
+.service-card ul li {
+  font-size: 13.5px !important;
+  color: #334155 !important;
+  position: relative !important;
+  padding-left: 28px !important;
+  line-height: 1.55 !important;
+  font-weight: 600 !important;
+  margin-bottom: 0 !important;
+}
+
+.service-card ul li::before {
+  content: '\f00c' !important;
+  font-family: 'Font Awesome 6 Free' !important;
+  font-weight: 900 !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 1px !important;
+  font-size: 10px !important;
+  color: #4f46e5 !important;
+  background: rgba(79, 70, 229, 0.12) !important;
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Facility Card Enhancements */
+.facility-card {
+  background: linear-gradient(135deg, #0b1329 0%, #1e1b4b 50%, #0369a1 100%) !important;
+  padding: 36px 32px !important;
+  border-radius: 24px !important;
+  color: #fff !important;
+  margin-bottom: 24px !important;
+  box-shadow: 0 25px 50px -10px rgba(15, 23, 42, 0.35) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* Process Step Cards */
+.pf-step {
+  padding: 28px 32px !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 20px !important;
+  background: #f8fafc !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.pf-step:hover {
+  transform: translateX(8px) !important;
+  background: #ffffff !important;
+  border-color: #6366f1 !important;
+  box-shadow: 0 15px 35px -10px rgba(99, 102, 241, 0.15) !important;
+}
+
+.pf-num {
+  min-width: 54px !important;
+  height: 54px !important;
+  background: linear-gradient(135deg, #4f46e5, #0284c7) !important;
+  border-radius: 18px !important;
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.25) !important;
+  font-weight: 800 !important;
+}
+
+/* Industry Cards */
+.if-card {
+  background: rgba(30, 41, 59, 0.55) !important;
+  backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 22px !important;
+  padding: 32px 20px !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.if-card:hover {
+  transform: translateY(-8px) !important;
+  background: rgba(30, 41, 59, 0.9) !important;
+  border-color: rgba(56, 189, 248, 0.4) !important;
+  box-shadow: 0 20px 40px rgba(0, 194, 255, 0.18), 0 0 0 1px rgba(56, 189, 248, 0.25) !important;
+}
+
+/* Services Gallery Section */
+.services-gallery-section {
+  padding: 95px 0 !important;
+  background: linear-gradient(180deg, #f1f5f9 0%, #f8fafc 100%) !important;
+  position: relative !important;
+}
+
+.sg-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 28px !important;
+  margin-top: 40px !important;
+}
+
+.sg-card {
+  background: #0f172a !important;
+  border-radius: 24px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  box-shadow: 0 15px 35px -10px rgba(15, 23, 42, 0.12) !important;
+  border: 1px solid rgba(226, 232, 240, 0.8) !important;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 380px !important;
+}
+
+.sg-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 25px 50px -10px rgba(99, 102, 241, 0.25), 0 0 0 1px rgba(99, 102, 241, 0.3) !important;
+}
+
+.sg-image-wrap {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+}
+
+.sg-image-wrap img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.sg-card:hover .sg-image-wrap img {
+  transform: scale(1.08) !important;
+}
+
+.sg-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(180deg, rgba(2, 6, 23, 0.1) 0%, rgba(2, 6, 23, 0.6) 45%, rgba(2, 6, 23, 0.95) 100%) !important;
+  transition: background 0.3s ease !important;
+}
+
+.sg-card:hover .sg-overlay {
+  background: linear-gradient(180deg, rgba(2, 6, 23, 0.1) 0%, rgba(2, 6, 23, 0.5) 35%, rgba(15, 23, 42, 0.98) 100%) !important;
+}
+
+.sg-content {
+  position: relative !important;
+  z-index: 2 !important;
+  margin-top: auto !important;
+  padding: 30px 26px !important;
+  color: #ffffff !important;
+}
+
+.sg-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 4px 14px !important;
+  border-radius: 30px !important;
+  background: rgba(99, 102, 241, 0.25) !important;
+  backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(165, 180, 252, 0.4) !important;
+  font-size: 11px !important;
+  letter-spacing: 1.5px !important;
+  font-weight: 800 !important;
+  color: #a5b4fc !important;
+  text-transform: uppercase !important;
+  margin-bottom: 12px !important;
+}
+
+.sg-content h3 {
+  font-size: 21px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  margin-bottom: 8px !important;
+  line-height: 1.3 !important;
+  letter-spacing: -0.015em !important;
+}
+
+.sg-content p {
+  font-size: 14px !important;
+  color: #cbd5e1 !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 992px) {
+  .sg-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .sg-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
