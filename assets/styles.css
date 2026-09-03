@@ -9043,25 +9043,13 @@ body.nav-open {
   color: #ffffff !important;
 }
 
-/* 4. Section Tags / Badges */
+/* 4. Hide Hero Badges & Section Tags (Removed Per User Request) */
 .section-tag,
 .hero-badge,
 .intro-tag,
 .service-tag,
 .tag {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 8px !important;
-  padding: 6px 18px !important;
-  border-radius: 30px !important;
-  background: rgba(99, 102, 241, 0.09) !important;
-  border: 1px solid rgba(99, 102, 241, 0.25) !important;
-  font-size: 12px !important;
-  letter-spacing: 2px !important;
-  font-weight: 800 !important;
-  color: #4f46e5 !important;
-  text-transform: uppercase !important;
-  margin-bottom: 16px !important;
+  display: none !important;
 }
 
 /* 5. Service Cards & Feature Cards (Homepage Palette) */
