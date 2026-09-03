@@ -8956,3 +8956,321 @@ body.nav-open {
   border-color: rgba(56, 189, 248, 0.4) !important;
   box-shadow: 0 20px 40px rgba(0, 194, 255, 0.18), 0 0 0 1px rgba(56, 189, 248, 0.25) !important;
 }
+
+/* ==========================================================================
+   HOMEPAGE-MATCHED BRANDED UI SYSTEM FOR ALL SERVICE PAGES
+   ========================================================================== */
+
+/* 1. Global Service Typography & Headings */
+.service-page-section h1,
+.service-page-section h2,
+.service-page-section h3,
+.service-page-section h4,
+.service-detail h1,
+.service-detail h2,
+.service-detail h3,
+.service-detail h4,
+.hero h1,
+.hero-title,
+.section-head h2,
+.scale-header h2,
+.pf-header h2,
+.if-header h2,
+.cta-container h2 {
+  font-family: 'Plus Jakarta Sans', 'Sora', sans-serif !important;
+  letter-spacing: -0.025em !important;
+}
+
+/* 2. Service Hero Overlays & Gradient Accents */
+.service-page-section .hero,
+.service-detail .hero,
+.hero {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.service-page-section .hero::after,
+.service-detail .hero::after {
+  content: '' !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(135deg, rgba(2, 6, 23, 0.88) 0%, rgba(15, 23, 42, 0.76) 50%, rgba(30, 27, 75, 0.62) 100%) !important;
+  backdrop-filter: blur(2px) !important;
+  z-index: 1 !important;
+}
+
+.service-page-section .hero-content,
+.service-detail .hero-content {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.service-page-section .hero h1 span,
+.service-detail .hero h1 span,
+.hero h1 span,
+.hero-title em {
+  background: linear-gradient(135deg, #f97316 0%, #38bdf8 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  display: inline-block !important;
+  filter: drop-shadow(0 2px 8px rgba(249, 115, 22, 0.35)) !important;
+  font-style: normal !important;
+}
+
+/* 3. Primary & Secondary CTA Buttons */
+.btn-primary,
+.btn-work,
+.btn-quote,
+.service-btn,
+.hero .btn {
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  border-radius: 50px !important;
+  padding: 15px 34px !important;
+  box-shadow: 0 10px 30px rgba(249, 115, 22, 0.4) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+.btn-primary:hover,
+.btn-work:hover,
+.btn-quote:hover,
+.service-btn:hover,
+.hero .btn:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 16px 42px rgba(249, 115, 22, 0.6) !important;
+  background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%) !important;
+  color: #ffffff !important;
+}
+
+/* 4. Section Tags / Badges */
+.section-tag,
+.hero-badge,
+.intro-tag,
+.service-tag,
+.tag {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 6px 18px !important;
+  border-radius: 30px !important;
+  background: rgba(99, 102, 241, 0.09) !important;
+  border: 1px solid rgba(99, 102, 241, 0.25) !important;
+  font-size: 12px !important;
+  letter-spacing: 2px !important;
+  font-weight: 800 !important;
+  color: #4f46e5 !important;
+  text-transform: uppercase !important;
+  margin-bottom: 16px !important;
+}
+
+/* 5. Service Cards & Feature Cards (Homepage Palette) */
+.service-card,
+.feature-card,
+.process-card,
+.spec-card,
+.service-box {
+  background: #ffffff !important;
+  padding: 38px 32px !important;
+  border-radius: 24px !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02) !important;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.service-card::before,
+.feature-card::before,
+.process-card::before,
+.spec-card::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 4px !important;
+  background: linear-gradient(90deg, #f97316 0%, #6366f1 50%, #0284c7 100%) !important;
+  opacity: 0.85 !important;
+  transition: height 0.3s ease, opacity 0.3s ease !important;
+}
+
+.service-card:hover,
+.feature-card:hover,
+.process-card:hover,
+.spec-card:hover {
+  transform: translateY(-8px) !important;
+  border-color: rgba(99, 102, 241, 0.35) !important;
+  box-shadow: 0 25px 55px -10px rgba(99, 102, 241, 0.18), 0 0 0 1px rgba(99, 102, 241, 0.1) !important;
+}
+
+.service-card:hover::before,
+.feature-card:hover::before,
+.process-card:hover::before {
+  height: 5px !important;
+  opacity: 1 !important;
+}
+
+/* 6. Icon Badges */
+.service-icon,
+.feature-icon,
+.card-icon,
+.icon-box {
+  width: 62px !important;
+  height: 62px !important;
+  border-radius: 20px !important;
+  background: linear-gradient(135deg, #4f46e5 0%, #0284c7 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 24px !important;
+  margin-bottom: 24px !important;
+  color: #ffffff !important;
+  box-shadow: 0 10px 24px rgba(79, 70, 229, 0.3) !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.service-card:hover .service-icon,
+.feature-card:hover .feature-icon,
+.card-icon:hover,
+.icon-box:hover {
+  background: linear-gradient(135deg, #f97316 0%, #4f46e5 100%) !important;
+  transform: scale(1.1) rotate(5deg) !important;
+  box-shadow: 0 14px 28px rgba(249, 115, 22, 0.35) !important;
+}
+
+/* 7. Service Pills & Intro Highlights */
+.service-pill,
+.intro-highlights div,
+.feature-pill {
+  padding: 16px 20px !important;
+  border-radius: 16px !important;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.service-pill i,
+.intro-highlights div i,
+.feature-pill i {
+  color: #6366f1 !important;
+  font-size: 17px !important;
+  transition: transform 0.3s ease, color 0.3s ease !important;
+}
+
+.service-pill:hover,
+.intro-highlights div:hover,
+.feature-pill:hover {
+  transform: translateY(-4px) !important;
+  border-color: #6366f1 !important;
+  box-shadow: 0 14px 30px rgba(99, 102, 241, 0.15) !important;
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%) !important;
+}
+
+.service-pill:hover i,
+.intro-highlights div:hover i,
+.feature-pill:hover i {
+  transform: scale(1.25) !important;
+  color: #f97316 !important;
+}
+
+/* 8. Capabilities Glass Cards */
+.glass-card {
+  position: relative !important;
+  backdrop-filter: blur(20px) !important;
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%) !important;
+  border-radius: 24px !important;
+  padding: 36px 32px !important;
+  box-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(255, 255, 255, 0.9) inset !important;
+  border: 1px solid rgba(226, 232, 240, 0.9) !important;
+  z-index: 2 !important;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  overflow: hidden !important;
+}
+
+.glass-card::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 4px !important;
+  background: linear-gradient(90deg, #f97316 0%, #6366f1 50%, #0284c7 100%) !important;
+}
+
+.glass-card:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 30px 60px -12px rgba(99, 102, 241, 0.18), 0 0 0 1px rgba(99, 102, 241, 0.15) !important;
+  border-color: rgba(99, 102, 241, 0.3) !important;
+}
+
+.glass-card h4 {
+  margin-bottom: 22px !important;
+  font-size: 21px !important;
+  color: #0f172a !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.01em !important;
+  padding-bottom: 14px !important;
+  border-bottom: 2px solid #f1f5f9 !important;
+}
+
+.glass-card ul li::before {
+  content: '\f00c' !important;
+  font-family: 'Font Awesome 6 Free' !important;
+  font-weight: 900 !important;
+  color: #ffffff !important;
+  font-size: 11px !important;
+  background: linear-gradient(135deg, #4f46e5, #0284c7) !important;
+  width: 24px !important;
+  height: 24px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.25) !important;
+}
+
+/* 9. Facility & Dark Navy Highlight Cards */
+.facility-card,
+.dark-card {
+  background: linear-gradient(135deg, #0b1329 0%, #1e1b4b 50%, #0369a1 100%) !important;
+  padding: 36px 32px !important;
+  border-radius: 24px !important;
+  color: #ffffff !important;
+  margin-bottom: 24px !important;
+  box-shadow: 0 25px 50px -10px rgba(15, 23, 42, 0.35) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* 10. CTA Banners for Service Pages */
+.cta-premium,
+.cta-section {
+  position: relative !important;
+  padding: 100px 20px !important;
+  text-align: center !important;
+  color: #ffffff !important;
+  background: linear-gradient(135deg, rgba(2, 6, 23, 0.92) 0%, rgba(15, 23, 42, 0.88) 100%), url('img/cta-iso-tank-bg.webp') center/cover no-repeat fixed !important;
+  overflow: hidden !important;
+}
+
+.cta-container h2 {
+  font-size: 44px !important;
+  font-weight: 800 !important;
+  margin-bottom: 20px !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.02em !important;
+}
