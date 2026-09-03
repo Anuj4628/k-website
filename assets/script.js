@@ -174,17 +174,23 @@ function initNavigation() {
     }
 
     if (dropdownBtn) {
-      event.preventDefault();
-      const parentLi = dropdownBtn.closest(".has-menu");
-      if (parentLi) {
-        const wasOpen = parentLi.classList.contains("is-open");
-        // Close other open submenus
-        document.querySelectorAll(".has-menu").forEach((li) => {
-          if (li !== parentLi) li.classList.remove("is-open");
-        });
-        parentLi.classList.toggle("is-open", !wasOpen);
-        dropdownBtn.setAttribute("aria-expanded", String(!wasOpen));
+      const isIcon = event.target.classList.contains("dropdown-icon") || event.target.closest(".dropdown-icon");
+      if (isIcon) {
+        event.preventDefault();
+        const parentLi = dropdownBtn.closest(".has-menu");
+        if (parentLi) {
+          const wasOpen = parentLi.classList.contains("is-open");
+          document.querySelectorAll(".has-menu").forEach((li) => {
+            if (li !== parentLi) li.classList.remove("is-open");
+          });
+          parentLi.classList.toggle("is-open", !wasOpen);
+          dropdownBtn.setAttribute("aria-expanded", String(!wasOpen));
+        }
+        return;
       }
+      // If clicking main Services text/link, allow navigation to services.html
+      document.querySelectorAll(".has-menu").forEach((li) => li.classList.remove("is-open"));
+      closeMobileMenu();
       return;
     }
 
@@ -211,6 +217,21 @@ function initNavigation() {
     }
   };
   document.addEventListener("click", window._navClickListener);
+
+  // Handle smooth scroll for Services section hashes
+  function handleServiceHashScroll() {
+    const hash = window.location.hash;
+    if (hash) {
+      const target = document.querySelector(hash);
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 150);
+      }
+    }
+  }
+  handleServiceHashScroll();
+  window.addEventListener("hashchange", handleServiceHashScroll);
 
   // Close on Escape key
   document.addEventListener("keydown", (e) => {
@@ -293,12 +314,78 @@ function initAccordions() {
 }
 
 function initForms() {
-  document.querySelectorAll("[data-form]").forEach((form) => {
-    form.addEventListener("submit", (event) => {
+  const forms = document.querySelectorAll('form[action*="formsubmit.co"], [data-form]');
+  forms.forEach((form) => {
+    form.addEventListener("submit", async (event) => {
       event.preventDefault();
-      const status = form.querySelector(".form-status");
-      if (status) status.textContent = "Thanks. Your request has been captured for follow-up.";
-      form.reset();
+
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalBtnContent = submitBtn ? submitBtn.innerHTML : "Submit";
+
+      // Get or create status indicator message container
+      let statusEl = form.querySelector(".form-status");
+      if (!statusEl) {
+        statusEl = document.createElement("div");
+        statusEl.className = "form-status";
+        statusEl.style.cssText = "margin-top: 18px; font-size: 15px; font-weight: 600; text-align: center; border-radius: 12px; padding: 12px 16px; transition: all 0.3s ease;";
+        if (submitBtn && submitBtn.parentNode) {
+          submitBtn.parentNode.insertBefore(statusEl, submitBtn.nextSibling);
+        } else {
+          form.appendChild(statusEl);
+        }
+      }
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.style.opacity = "0.75";
+        submitBtn.innerHTML = 'Sending Message... <i class="fas fa-spinner fa-spin" style="margin-left: 8px;"></i>';
+      }
+
+      statusEl.style.display = "block";
+      statusEl.style.color = "#1e40af";
+      statusEl.style.background = "#eff6ff";
+      statusEl.style.border = "1px solid #bfdbfe";
+      statusEl.textContent = "Sending your inquiry...";
+
+      try {
+        const formData = new FormData(form);
+        const actionUrl = form.action.includes("/ajax/")
+          ? form.action
+          : form.action.replace("formsubmit.co/", "formsubmit.co/ajax/");
+
+        const response = await fetch(actionUrl, {
+          method: "POST",
+          body: formData,
+          headers: {
+            "Accept": "application/json"
+          }
+        });
+
+        if (response.ok) {
+          statusEl.style.color = "#166534";
+          statusEl.style.background = "#f0fdf4";
+          statusEl.style.border = "1px solid #bbf7d0";
+          statusEl.textContent = "Thank you! Your inquiry has been submitted successfully to our team.";
+          form.reset();
+        } else {
+          throw new Error("Form submission failed");
+        }
+      } catch (err) {
+        // Fallback: standard form submit if fetch/ajax fails or network blocks it
+        statusEl.style.color = "#991b1b";
+        statusEl.style.background = "#fef2f2";
+        statusEl.style.border = "1px solid #fecaca";
+        statusEl.textContent = "Submitting form...";
+        setTimeout(() => {
+          form.submit();
+        }, 600);
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.style.opacity = "1";
+          submitBtn.innerHTML = originalBtnContent;
+        }
+      }
     });
   });
 }

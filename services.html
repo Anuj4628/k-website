@@ -1,0 +1,1139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="img/krestar-best-favicon.png">
+    <title>Our Services | Krestar Inc</title>
+    <meta name="description"
+        content="ISO tank cleaning, repair, maintenance, testing, inspection, and gas tank container support near Nhava Sheva Port (NSA), Raigad.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/script.js" defer></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Sora', sans-serif !important;
+        }
+        body, p, li, a, span {
+            font-family: 'Manrope', sans-serif !important;
+        }
+        body {
+            background: #ffffff;
+            color: #111;
+        }
+        .service-page-section {
+            scroll-margin-top: 80px;
+            padding-bottom: 40px;
+        }
+
+        :root {
+            --grad: linear-gradient(90deg, #7b2ff7, #00c6ff);
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            height: 520px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            color: #fff;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(2, 6, 23, 0.6) 50%, rgba(2, 6, 23, 0.45));
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+        .hero h1 {
+            font-size: 52px;
+            font-weight: 800;
+            line-height: 1.1;
+        }
+        .hero span {
+            background: var(--grad);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero p {
+            margin-top: 18px;
+            color: #e2e8f0;
+            font-size: 17.5px;
+            line-height: 1.7;
+        }
+
+        /* ===== INTRO PREMIUM ===== */
+        .intro-premium {
+            position: relative;
+            padding: 80px 0;
+            background: radial-gradient(circle at 80% 20%, rgba(120,70,255,0.12), transparent 40%), radial-gradient(circle at 10% 80%, rgba(0,200,255,0.1), transparent 40%), #f8fbff;
+            overflow: hidden;
+        }
+        .intro-wrap {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .intro-tag {
+            display: inline-block;
+            font-size: 13px;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+            color: #5f6cff;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+        }
+        .intro-content h2 {
+            font-size: 36px;
+            line-height: 1.2;
+            margin-bottom: 18px;
+            font-weight: 700;
+            color: #0a0f2c;
+        }
+        .intro-content h2 span {
+            display: block;
+            background: linear-gradient(90deg, #6a5cff, #00c2ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .intro-lead {
+            font-size: 17px;
+            color: #2d3557;
+            margin-bottom: 14px;
+            font-weight: 600;
+        }
+        .intro-content p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #4a5575;
+        }
+        .intro-highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 22px;
+            gap: 12px;
+            font-size: 14.5px;
+            color: #1e2a52;
+            font-weight: 600;
+        }
+        .intro-visual {
+            position: relative;
+        }
+        .glow-orb {
+            position: absolute;
+            width: 260px;
+            height: 260px;
+            background: radial-gradient(circle, rgba(106,92,255,0.35), transparent 70%);
+            filter: blur(40px);
+            top: -30px;
+            right: -30px;
+            z-index: 0;
+        }
+        .glass-card {
+            position: relative;
+            backdrop-filter: blur(16px);
+            background: rgba(255,255,255,0.88);
+            border-radius: 20px;
+            padding: 28px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+            border: 1px solid rgba(255,255,255,0.7);
+            z-index: 2;
+        }
+        .glass-card h4 {
+            margin-bottom: 14px;
+            font-size: 19px;
+            color: #0a0f2c;
+            font-weight: 700;
+        }
+        .glass-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .glass-card ul li {
+            font-size: 14.5px;
+            margin-bottom: 10px;
+            color: #2f3a63;
+        }
+
+        /* ===== INTRO REDESIGN ===== */
+        .intro-redesign {
+            position: relative;
+            padding: 80px 0;
+            overflow: hidden;
+            background: linear-gradient(135deg, #f7fbff 0%, #eef5ff 100%);
+        }
+        .intro-blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: 0;
+        }
+        .intro-blob-1 {
+            width: 300px;
+            height: 300px;
+            background: rgba(106, 92, 255, 0.15);
+            top: -80px;
+            left: -60px;
+        }
+        .intro-blob-2 {
+            width: 280px;
+            height: 280px;
+            background: rgba(0, 194, 255, 0.12);
+            bottom: -80px;
+            right: -40px;
+        }
+        .intro-top-head {
+            text-align: center;
+            margin-bottom: 45px;
+            position: relative;
+            z-index: 2;
+        }
+        .intro-mini-tag {
+            display: block;
+            margin-bottom: 12px;
+            font-size: 13px;
+            letter-spacing: 3px;
+            font-weight: 800;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #6a5cff, #00c2ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .intro-top-head h2 {
+            font-size: 38px;
+            line-height: 1.2;
+            color: #08142f;
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+        .intro-top-head h3 {
+            font-size: 24px;
+            font-weight: 700;
+            background: linear-gradient(90deg, #6a5cff, #00c2ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .intro-main-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 45px;
+            align-items: start;
+            position: relative;
+            z-index: 2;
+        }
+        .intro-image-card {
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+        }
+        .intro-image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .intro-image-card.large {
+            height: 330px;
+        }
+        .intro-text-box {
+            padding: 28px;
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(14px);
+            border-radius: 20px;
+            margin-top: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.04);
+        }
+        .intro-text-box p {
+            font-size: 15.5px;
+            line-height: 1.8;
+            color: #33415f;
+            margin-bottom: 14px;
+        }
+        .facility-card {
+            background: linear-gradient(135deg, #5b2c91 0%, #005baa 55%, #00a9d6 100%);
+            padding: 30px;
+            border-radius: 22px;
+            color: #fff;
+            margin-bottom: 20px;
+            box-shadow: 0 18px 45px rgba(0,0,0,0.12);
+        }
+        .facility-card h4 {
+            font-size: 22px;
+            color: #fff;
+            margin-bottom: 18px;
+            font-weight: 700;
+        }
+        .facility-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .facility-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14.5px;
+            font-weight: 600;
+        }
+        .service-points {
+            display: grid;
+            gap: 10px;
+        }
+        .service-pill {
+            padding: 14px 18px;
+            border-radius: 14px;
+            background: #ffffff;
+            border: 1px solid #e4ecff;
+            font-size: 13.5px;
+            font-weight: 700;
+            color: #0f1d3c;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
+        }
+
+        /* ===== SERVICES PREMIUM ===== */
+        .services-premium {
+            padding: 80px 0;
+            background: #f6f9ff;
+            position: relative;
+        }
+        .section-head {
+            max-width: 800px;
+            margin-bottom: 45px;
+        }
+        .section-tag {
+            font-size: 12px;
+            letter-spacing: 2px;
+            color: #6a5cff;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .section-head h2 {
+            font-size: 34px;
+            margin: 8px 0;
+            color: #0a0f2c;
+        }
+        .section-head p {
+            color: #4a5575;
+            font-size: 15.5px;
+            line-height: 1.7;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        .service-card {
+            background: #ffffff;
+            padding: 28px;
+            border-radius: 16px;
+            border: 1px solid #e4e9f5;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.03);
+            transition: 0.35s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 45px rgba(0,0,0,0.07);
+        }
+        .service-icon {
+            font-size: 26px;
+            margin-bottom: 12px;
+            color: #00c2ff;
+        }
+        .service-card h4 {
+            font-size: 19px;
+            margin-bottom: 8px;
+            color: #0a0f2c;
+            font-weight: 700;
+        }
+        .service-card p {
+            font-size: 14px;
+            color: #5a678c;
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+        .service-card ul {
+            padding-left: 16px;
+        }
+        .service-card ul li {
+            font-size: 13px;
+            color: #2f3a63;
+            margin-bottom: 6px;
+        }
+
+        /* ===== SCALE PREMIUM ===== */
+        .scale-premium {
+            position: relative;
+            padding: 90px 0;
+            color: #fff;
+            background: linear-gradient(rgba(2,6,23,0.75), rgba(2,6,23,0.65)), url('img/iso-tank-yard.webp') center/cover no-repeat;
+        }
+        .scale-header {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+        .scale-tag {
+            font-size: 12px;
+            letter-spacing: 2px;
+            color: #6a5cff;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .scale-header h2 {
+            font-size: 34px;
+            margin: 8px 0;
+        }
+        .scale-header p {
+            color: #a0b2d6;
+            font-size: 15.5px;
+        }
+        .scale-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        .scale-card {
+            background: linear-gradient(135deg, #6a5cff, #00c2ff);
+            padding: 30px 20px;
+            border-radius: 16px;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 12px 35px rgba(0,0,0,0.18);
+        }
+        .scale-icon {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        .scale-card h3 {
+            font-size: 38px;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+        .scale-card p {
+            font-size: 14.5px;
+            color: rgba(255,255,255,0.9);
+        }
+
+        /* ===== PROCESS FLOW V2 ===== */
+        .process-flow-v2 {
+            padding: 90px 20px;
+            background: #ffffff;
+        }
+        .pf-container {
+            max-width: 1100px;
+            margin: auto;
+        }
+        .pf-header {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+        .pf-header h2 {
+            font-size: 32px;
+            margin-bottom: 8px;
+            color: #0a0f2c;
+            font-weight: 700;
+        }
+        .pf-header p {
+            color: #555;
+            font-size: 15px;
+            max-width: 700px;
+            margin: auto;
+        }
+        .pf-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        .pf-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 18px;
+            padding: 20px;
+            border: 1px solid #e5e8f0;
+            border-radius: 14px;
+            background: #fafcff;
+        }
+        .pf-num {
+            min-width: 46px;
+            height: 46px;
+            background: linear-gradient(90deg, #6a5cff, #00c2ff);
+            color: #fff;
+            font-weight: 700;
+            font-size: 17px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        .pf-content h4 {
+            margin-bottom: 5px;
+            font-size: 17.5px;
+            color: #0a0f2c;
+            font-weight: 700;
+        }
+        .pf-content p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* ===== INDUSTRIES FUTURISTIC ===== */
+        .industries-futuristic {
+            padding: 90px 20px;
+            background: linear-gradient(135deg, #020617, #0b1f3a);
+            color: #fff;
+        }
+        .if-container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        .if-header {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+        .if-tag {
+            font-size: 12px;
+            letter-spacing: 2px;
+            color: #6a5cff;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .if-header h2 {
+            font-size: 32px;
+            margin: 8px 0;
+        }
+        .if-header p {
+            color: #a0b2d6;
+            max-width: 700px;
+            margin: auto;
+            font-size: 15px;
+        }
+        .if-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 18px;
+        }
+        .if-card {
+            background: #6a5cff;
+            padding: 22px 14px;
+            border-radius: 16px;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+        }
+        .if-card i {
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .if-card h4 {
+            color: #fff;
+            font-size: 15.5px;
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+        .if-card p {
+            color: rgba(255,255,255,0.9);
+            font-size: 12.5px;
+        }
+
+        /* ===== CTA PREMIUM ===== */
+        .cta-premium {
+            position: relative;
+            padding: 90px 20px;
+            text-align: center;
+            color: #fff;
+            background: linear-gradient(rgba(5,11,26,0.85), rgba(5,11,26,0.7)), url('img/cta-iso-tank-bg.webp') center/cover no-repeat;
+        }
+        .cta-inner, .cta-container {
+            max-width: 900px;
+            margin: auto;
+            position: relative;
+            z-index: 2;
+        }
+        .cta-content h2, .cta-container h2 {
+            font-size: 38px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+        .cta-content p, .cta-container p {
+            color: #cbd6f3;
+            font-size: 16px;
+            margin-bottom: 28px;
+        }
+        .cta-actions, .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+        .cta-btn {
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 15px;
+        }
+        .cta-btn.primary, .cta-btn-primary {
+            background: linear-gradient(90deg, #6a5cff, #00c2ff);
+            color: #fff;
+            box-shadow: 0 8px 25px rgba(0,200,255,0.25);
+        }
+        .cta-btn.secondary, .cta-btn-secondary {
+            border: 1px solid rgba(255,255,255,0.4);
+            color: #fff;
+            backdrop-filter: blur(6px);
+        }
+
+        @media (max-width: 992px) {
+            .intro-wrap, .intro-main-grid, .scale-grid, .services-grid {
+                grid-template-columns: 1fr;
+            }
+            .if-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .intro-top-head h2 {
+                font-size: 32px;
+            }
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <main>
+
+        <!-- ================================================================= -->
+        <!-- 1. ISO TANK CLEANING SECTION -->
+        <!-- ================================================================= -->
+        <div id="iso-tank-cleaning" class="service-page-section">
+
+            <section class="hero" style="background: url('img/krestar-tank-cleaning.webp') center/cover no-repeat;">
+                <div class="container hero-content">
+                    <h1>Complete ISO Tank<br><span>Container Solutions</span></h1>
+                    <p>
+                        Strategically located just 10 km from NSA (Nhava Sheva Port),
+                        providing reliable ISO tank cleaning, handling and turnaround
+                        solutions for chemical, food-grade and gas.
+                    </p>
+                    <a href="contact.html" class="btn">Get a Cleaning Quote</a>
+                </div>
+
+                <div class="hero-social">
+                    <a href="#">FACEBOOK <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#">INSTAGRAM <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#">TWITTER <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <section class="intro-redesign">
+                <div class="intro-blob intro-blob-1"></div>
+                <div class="intro-blob intro-blob-2"></div>
+
+                <div class="container">
+                    <div class="intro-top-head">
+                        <span class="intro-mini-tag">ISO TANK CLEANING FACILITY</span>
+                        <h2>Advanced ISO Tank <br>Cleaning & Neutralization Facility</h2>
+                        <h3>Near Nhava Sheva Port (NSA)</h3>
+                    </div>
+
+                    <div class="intro-main-grid">
+                        <div class="intro-left">
+                            <div class="intro-image-wrap">
+                                <div class="intro-image-card large">
+                                    <img src="img/iso-tank-yard.webp" alt="ISO Tank Yard">
+                                </div>
+                            </div>
+                            <div class="intro-text-box">
+                                <p>
+                                    Krestar Inc is a complete ISO tank container solution strategically located 10 KMS near NSA (Nhava Sheva Port).
+                                </p>
+                                <p>
+                                    Our facility is engineered for
+                                    <strong>chemical/food-grade tank cleaning in separate bays, handling gas tanks (T-50)</strong>
+                                    semi-automated high-pressure systems, steam cleaning units,
+                                    and controlled <strong>hot air drying chambers</strong>.
+                                    We ensure every ISO tank is
+                                    <strong>contamination-free, compliant, and fit for next cargo.</strong>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="intro-right">
+                            <div class="facility-card">
+                                <h4>Facility Highlights</h4>
+                                <div class="facility-list">
+                                    <div class="facility-item">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <span>1500+ Tanks handling capacity</span>
+                                    </div>
+                                    <div class="facility-item">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <span>Advanced rotary jet & steam cleaning systems</span>
+                                    </div>
+                                    <div class="facility-item">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <span>Dedicated bays for chemical & food cargo</span>
+                                    </div>
+                                    <div class="facility-item">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <span>ISO-Compliant cleaning process</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="service-points">
+                                <div class="service-pill">✔ Chemical & Hazardous Cleaning</div>
+                                <div class="service-pill">✔ Food Grade & Edible Cargo Cleaning</div>
+                                <div class="service-pill">✔ Gas Tank Neutralization & Venting</div>
+                                <div class="service-pill">✔ Fast Turnaround Near Nhava Sheva Port (NSA)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-light services-premium">
+                <div class="service-bg-shape shape-1"></div>
+                <div class="service-bg-shape shape-2"></div>
+                <div class="service-bg-shape shape-3"></div>
+                <div class="service-ring ring-1"></div>
+                <div class="service-ring ring-2"></div>
+                <div class="container">
+                    <div class="section-head">
+                        <span class="section-tag">CORE SERVICES</span>
+                        <h2>ISO Tank Cleaning & Neutralization Capabilities</h2>
+                        <p>Krestar Inc. delivers end-to-end ISO tank cleaning services Near Nhava Sheva Port (NSA), supporting chemical, food-grade transport, and gas tank operations with strict compliance and high-performance cleaning systems.</p>
+                    </div>
+
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fa-solid fa-flask"></i></div>
+                            <h4>Chemical Tank Cleaning</h4>
+                            <p>Specialized ISO tank cleaning for hazardous and non-hazardous chemicals, ensuring complete removal of residues, contaminants, and toxic buildup.</p>
+                            <ul>
+                                <li>High-pressure jet cleaning systems</li>
+                                <li>Removal of corrosive & toxic residues</li>
+                                <li>Compliance with safety & environmental norms</li>
+                                <li>Suitable for petrochemical & industrial cargo</li>
+                            </ul>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fa-solid fa-utensils"></i></div>
+                            <h4>Food Grade Tank Cleaning</h4>
+                            <p>Hygienic ISO tank cleaning designed for edible oils, liquid food products, and sensitive cargo requiring contamination-free handling.</p>
+                            <ul>
+                                <li>Steam cleaning & sanitization processes</li>
+                                <li>Zero contamination assurance</li>
+                                <li>Food safety compliant cleaning methods</li>
+                                <li>Ideal for edible oils, syrups & liquid food cargo</li>
+                            </ul>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fa-solid fa-wind"></i></div>
+                            <h4>Gas Tank Neutralization</h4>
+                            <p>Controlled Neutralization and venting of ISO tank containers to safely remove residual gases before cleaning, inspection, or reuse.</p>
+                            <ul>
+                                <li>Safe gas venting procedures</li>
+                                <li>Explosion-risk controlled environments</li>
+                                <li>Preparation for maintenance & inspection</li>
+                                <li>Compliance with gas handling standards</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================================================================= -->
+        <!-- 2. TANK REPAIR & MAINTENANCE SECTION -->
+        <!-- ================================================================= -->
+        <div id="tank-repair-maintenance" class="service-page-section">
+
+            <section class="hero" style="background: url('img/krestar-tank-repairing-and-maintenance.webp') center/cover no-repeat;">
+                <div class="container hero-content">
+                    <h1>ISO Tank Repair <br><span>& Maintenance</span></h1>
+                    <p>
+                        Professional ISO tank repair and maintenance services in NSA near NSA port.
+                        Ensuring structural integrity, safety compliance, and long-term performance for tank containers.
+                    </p>
+                    <a href="contact.html" class="btn">Get Repair Quote</a>
+                </div>
+
+                <div class="hero-social">
+                    <a href="#">FACEBOOK <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#">INSTAGRAM <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#">TWITTER <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <section class="section intro-premium">
+                <div class="container intro-wrap">
+                    <div class="intro-content">
+                        <span class="intro-tag">ISO TANK REPAIR FACILITY • NSA (NSA)</span>
+                        <h2>Advanced ISO Tank Repair & Maintenance Facility <span>Near Nhava Sheva Port</span></h2>
+                        <p class="intro-lead">Krestar Inc. provides comprehensive ISO tank repair and maintenance services in NSA, strategically located near NSA to support fast turnaround for operators.</p>
+                        <p>Our facility is equipped for <strong>structural repairs, welding, valve replacement, shell correction, and refurbishment</strong> of ISO tank containers. We ensure every tank meets <strong>international safety standards, compliance requirements, and operational readiness</strong> before returning to service.</p>
+                        <div class="intro-highlights">
+                            <div>✔ Structural Repairs & Welding</div>
+                            <div>✔ Valve & Fittings Replacement</div>
+                            <div>✔ Shell Straightening & Fabrication</div>
+                            <div>✔ Preventive Maintenance Programs</div>
+                        </div>
+                    </div>
+                    <div class="intro-visual">
+                        <div class="glow-orb"></div>
+                        <div class="glass-card">
+                            <h4>Repair Capabilities</h4>
+                            <ul>
+                                <li>Certified Welding & Fabrication</li>
+                                <li>Leak Detection & Pressure Fixes</li>
+                                <li>Valve & Safety System Repair</li>
+                                <li>ISO Compliance & Certification Ready</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-light services-premium">
+                <div class="container">
+                    <div class="section-head">
+                        <span class="section-tag">CORE SERVICES</span>
+                        <h2>ISO Tank Repair & Maintenance Capabilities</h2>
+                        <p>Krestar Inc. delivers complete ISO tank repair solutions including structural correction, component replacement, and preventive maintenance for safe operations.</p>
+                    </div>
+
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fa-solid fa-wrench"></i></div>
+                            <h4>Structural Tank Repairs</h4>
+                            <p>Repair of tank shell damage, dents, cracks, and structural deformation to restore integrity.</p>
+                            <ul>
+                                <li>Shell straightening & dent removal</li>
+                                <li>Certified welding & fabrication</li>
+                                <li>Frame and support repairs</li>
+                                <li>Restoration of structural strength</li>
+                            </ul>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                            <h4>Valve & Fittings Replacement</h4>
+                            <p>Repair and replacement of valves, gaskets, and fittings to ensure leak-proof operation.</p>
+                            <ul>
+                                <li>Safety valve servicing</li>
+                                <li>Gasket and seal replacement</li>
+                                <li>Nozzle and piping repairs</li>
+                                <li>Leak prevention systems</li>
+                            </ul>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <h4>Preventive Maintenance</h4>
+                            <p>Scheduled maintenance services to extend tank life and ensure compliance with regulations.</p>
+                            <ul>
+                                <li>Routine inspections & servicing</li>
+                                <li>Wear and tear analysis</li>
+                                <li>Compliance readiness checks</li>
+                                <li>Operational safety assurance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================================================================= -->
+        <!-- 3. TESTING & INSPECTION SECTION -->
+        <!-- ================================================================= -->
+        <div id="testing-inspection" class="service-page-section">
+
+            <section class="hero" style="background: url('img/krestar-tank-testing.webp') center/cover no-repeat;">
+                <div class="container hero-content">
+                    <h1>ISO Tank Testing <br><span>& Inspection</span></h1>
+                    <p>Certified ISO tank testing and inspection services in near NSA port. Ensuring safety, compliance, and structural integrity for global tank operations.</p>
+                    <a href="contact.html" class="btn">Get Inspection Quote</a>
+                </div>
+
+                <div class="hero-social">
+                    <a href="#">FACEBOOK <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#">INSTAGRAM <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#">TWITTER <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <section class="section intro-premium">
+                <div class="container intro-wrap">
+                    <div class="intro-content">
+                        <span class="intro-tag">ISO TANK TESTING FACILITY • (NSA)</span>
+                        <h2>Advanced ISO Tank Testing & Inspection Facility <span>Near Nhava Sheva Port</span></h2>
+                        <p class="intro-lead">Krestar Inc. operates a certified ISO tank testing and inspection facility in NSA, strategically located near NSA (Nhava Sheva Port) for fast and compliant tank turnaround.</p>
+                        <p>Our facility is equipped for <strong>hydro testing, pressure testing, leak detection, valve inspection, and certification</strong> to ensure ISO tanks meet global transport standards.</p>
+                        <div class="intro-highlights">
+                            <div>✔ Hydro & Pressure Testing</div>
+                            <div>✔ Leak Detection Systems</div>
+                            <div>✔ Valve & Safety Inspection</div>
+                            <div>✔ Compliance Certification</div>
+                        </div>
+                    </div>
+                    <div class="intro-visual">
+                        <div class="glow-orb"></div>
+                        <div class="glass-card">
+                            <h4>Testing Capabilities</h4>
+                            <ul>
+                                <li>Hydrostatic Pressure Testing</li>
+                                <li>Leak & Integrity Checks</li>
+                                <li>Valve & Safety Testing</li>
+                                <li>International Compliance Certification</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-light services-premium">
+                <div class="container">
+                    <div class="section-head">
+                        <span class="section-tag">CORE SERVICES</span>
+                        <h2>ISO Tank Testing & Inspection Capabilities</h2>
+                        <p>Krestar Inc. provides comprehensive ISO tank testing services in near NSA, ensuring safety, compliance, and readiness for global operations.</p>
+                    </div>
+
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                            <h4>Hydrostatic Pressure Testing</h4>
+                            <p>High-pressure testing to verify tank strength, durability, and structural integrity.</p>
+                            <ul>
+                                <li>Pressure endurance testing</li>
+                                <li>Structural strength validation</li>
+                                <li>Compliance certification</li>
+                                <li>Safety assurance checks</li>
+                            </ul>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <h4>Leak Detection & Integrity Testing</h4>
+                            <p>Advanced systems to detect micro leaks and ensure complete tank integrity.</p>
+                            <ul>
+                                <li>Vacuum leak testing</li>
+                                <li>Seal integrity verification</li>
+                                <li>Fault detection systems</li>
+                                <li>Pre-dispatch validation</li>
+                            </ul>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <h4>Valve & Safety Inspection</h4>
+                            <p>Inspection and testing of valves, fittings, and safety mechanisms.</p>
+                            <ul>
+                                <li>Safety valve testing</li>
+                                <li>Emergency system checks</li>
+                                <li>Functional inspection</li>
+                                <li>Compliance readiness</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================================================================= -->
+        <!-- 4. GAS TANK SUPPORT SECTION -->
+        <!-- ================================================================= -->
+        <div id="gas-tank-support" class="service-page-section">
+
+            <section class="hero" style="background: url('img/gas-tank-container-support-banner.webp') center/cover no-repeat;">
+                <div class="container hero-content">
+                    <h1>Gas Tank Container <br><span>Support Services</span></h1>
+                    <p>Specialized gas tank container support services in NSA near NSA port. Ensuring safe handling, Neutralization, inspection readiness, and compliance for gas operations.</p>
+                    <a href="contact.html" class="btn">Get Support Quote</a>
+                </div>
+
+                <div class="hero-social">
+                    <a href="#">FACEBOOK <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#">INSTAGRAM <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#">TWITTER <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <section class="section intro-premium">
+                <div class="container intro-wrap">
+                    <div class="intro-content">
+                        <span class="intro-tag">GAS TANK SUPPORT • (NSA)</span>
+                        <h2>Advanced Gas Tank Container Support Facility <span>Near Nhava Sheva Port</span></h2>
+                        <p class="intro-lead">Krestar Inc. provides specialized gas tank container support services in NSA, designed for safe handling, Neutralization, and preparation of gas tanks for operations.</p>
+                        <p>Our facility is equipped for <strong>gas tank Neutralization, venting, safety preparation, inspection readiness, and handling support</strong>. We ensure all gas tank containers are <strong>safe, compliant, and ready for transport, maintenance, or reuse</strong>.</p>
+                        <div class="intro-highlights">
+                            <div>✔ Safe Gas Tank Neutralization</div>
+                            <div>✔ Controlled Venting Systems</div>
+                            <div>✔ Inspection & Maintenance Support</div>
+                            <div>✔ Compliance with Gas Safety Standards</div>
+                        </div>
+                    </div>
+                    <div class="intro-visual">
+                        <div class="glow-orb"></div>
+                        <div class="glass-card">
+                            <h4>Support Capabilities</h4>
+                            <ul>
+                                <li>Gas Venting & Pressure Release</li>
+                                <li>Hazard-Controlled Handling</li>
+                                <li>Preparation for Inspection & Repair</li>
+                                <li>Compliance with Safety Protocols</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-light services-premium">
+                <div class="container">
+                    <div class="section-head">
+                        <span class="section-tag">CORE SERVICES</span>
+                        <h2>Gas Tank Container Support Capabilities</h2>
+                        <p>Krestar Inc. provides complete gas tank support services in near NSA, ensuring safe handling, controlled degassing, and compliance with gas transport regulations.</p>
+                    </div>
+
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fa-solid fa-wind"></i></div>
+                            <h4>Gas Tank Degassing</h4>
+                            <p>Controlled removal of residual gases from tank containers before inspection or reuse.</p>
+                            <ul>
+                                <li>Safe venting procedures</li>
+                                <li>Pressure release systems</li>
+                                <li>Hazard-controlled environment</li>
+                                <li>Preparation for cleaning & repair</li>
+                            </ul>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fa-solid fa-gauge"></i></div>
+                            <h4>Pressure & Safety Handling</h4>
+                            <p>Safe handling of pressurized gas tank containers with strict safety protocols.</p>
+                            <ul>
+                                <li>Pressure monitoring systems</li>
+                                <li>Emergency safety procedures</li>
+                                <li>Controlled gas handling</li>
+                                <li>Risk mitigation processes</li>
+                            </ul>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                            <h4>Inspection & Maintenance Support</h4>
+                            <p>Preparation of gas tanks for inspection, testing, and maintenance activities.</p>
+                            <ul>
+                                <li>Pre-inspection preparation</li>
+                                <li>Support for testing procedures</li>
+                                <li>Maintenance readiness</li>
+                                <li>Compliance verification</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================================================================= -->
+        <!-- UNIFIED OVERVIEW SECTIONS (PREVENT REPETITION) -->
+        <!-- ================================================================= -->
+        <section class="section scale-premium">
+            <div class="container">
+                <div class="scale-header">
+                    <span class="scale-tag">FACILITY SCALE</span>
+                    <h2>Built for High-Volume ISO Tank Operations</h2>
+                    <p>Designed to handle large-scale industrial cleaning, repairing, and testing throughput near Nhava Sheva Port (NSA).</p>
+                </div>
+
+                <div class="scale-grid">
+                    <div class="scale-card">
+                        <div class="scale-icon"><i class="fa-solid fa-oil-can"></i></div>
+                        <h3 class="counter" data-target="1500">1500+</h3>
+                        <p>ISO Tanks Capacity</p>
+                    </div>
+                    <div class="scale-card">
+                        <div class="scale-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                        <h3><span class="counter" data-target="9">9</span>+</h3>
+                        <p>Acres Facility Area</p>
+                    </div>
+                    <div class="scale-card">
+                        <div class="scale-icon"><i class="fa-solid fa-gears"></i></div>
+                        <h3 class="counter" data-target="20">20+</h3>
+                        <p>Years Combined Experience</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-flow-v2">
+            <div class="pf-container">
+                <div class="pf-header">
+                    <h2>End-to-End ISO Tank Service Workflow</h2>
+                    <p>Our structured workflow ensures safe handling, thorough cleaning, certified testing, and compliance for all ISO tank operations.</p>
+                </div>
+                <div class="pf-steps">
+                    <div class="pf-step"><div class="pf-num">01</div><div class="pf-content"><h4>Inspection & Assessment</h4><p>Detailed inspection of tank condition, previous cargo, and contamination level to determine exact requirements.</p></div></div>
+                    <div class="pf-step"><div class="pf-num">02</div><div class="pf-content"><h4>Neutralization & Degassing</h4><p>Controlled removal of residual chemicals, sludge, or gases following safety and environmental regulations.</p></div></div>
+                    <div class="pf-step"><div class="pf-num">03</div><div class="pf-content"><h4>High-Pressure Cleaning & Repair</h4><p>Automated jet cleaning, steam sanitization, structural repairs, and valve overhauling.</p></div></div>
+                    <div class="pf-step"><div class="pf-num">04</div><div class="pf-content"><h4>Statutory Testing & Inspection</h4><p>2.5 & 5-year periodic hydrostatic testing, air leak checks, and class surveyor evaluation.</p></div></div>
+                    <div class="pf-step"><div class="pf-num">05</div><div class="pf-content"><h4>Final Quality Certification</h4><p>Final quality inspection ensures full compliance, ready for next cargo dispatch with certification.</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="industries-futuristic">
+            <div class="if-container">
+                <div class="if-header">
+                    <span class="if-tag">INDUSTRIES WE SERVE</span>
+                    <h2>Supporting Critical Industrial Supply Chains</h2>
+                    <p>Our comprehensive ISO tank services support chemical, petrochemical, food, pharma, and gas transport industries near NSA port.</p>
+                </div>
+                <div class="if-grid">
+                    <div class="if-card"><i class="fa-solid fa-flask"></i><h4>Chemical</h4><p>Safe handling and cleaning of hazardous chemical tank containers.</p></div>
+                    <div class="if-card"><i class="fa-solid fa-industry"></i><h4>Petrochemical</h4><p>Refurbishment and maintenance for petroleum-based cargo tanks.</p></div>
+                    <div class="if-card"><i class="fa-solid fa-utensils"></i><h4>Food & Edible Oils</h4><p>Hygienic steam cleaning for contamination-free liquid food transport.</p></div>
+                    <div class="if-card"><i class="fa-solid fa-capsules"></i><h4>Pharmaceutical</h4><p>Precision testing and inspection for high-sensitivity pharma cargo.</p></div>
+                    <div class="if-card"><i class="fa-solid fa-wind"></i><h4>Gas Transport</h4><p>Nitrogen purging and support for T-50 gas tank containers.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-premium">
+            <div class="cta-container">
+                <h2>Ready for Reliable ISO Tank Solutions Near NSA Port?</h2>
+                <p>Partner with Krestar Inc. for fast, compliant, and high-efficiency ISO tank cleaning, repair, testing, and gas support services.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="cta-btn cta-btn-primary">Get a Quote</a>
+                    <a href="tel:+919920350385" class="cta-btn cta-btn-secondary">Call Now</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+
+</body>
+
+</html>

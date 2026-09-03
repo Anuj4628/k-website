@@ -7822,8 +7822,7 @@ body.nav-open {
     position: relative !important;
     min-height: 100vh !important;
     min-height: 100svh !important;
-    height: 100vh !important;
-    height: 100svh !important;
+    height: auto !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -7832,30 +7831,51 @@ body.nav-open {
     background: #0f172a !important;
   }
 
-  .hero-slides,
+  .hero-slides {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    overflow: hidden !important;
+  }
+
   .hero-slide {
     position: absolute !important;
     inset: 0 !important;
     width: 100% !important;
     height: 100% !important;
-    background-position: center !important;
+    background-position: center center !important;
     background-size: cover !important;
+    background-repeat: no-repeat !important;
+    opacity: 1 !important;
+  }
+
+  .hero-slide .hero-badge,
+  .hero-slide .hero-title,
+  .hero-slide .hero-desc,
+  .hero-slide .hero-actions {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
   }
 
   .hero-overlay {
-    background: linear-gradient(180deg, rgba(15,23,42,0.65) 0%, rgba(15,23,42,0.45) 50%, rgba(15,23,42,0.85) 100%) !important;
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 1 !important;
+    background: linear-gradient(180deg, rgba(15,23,42,0.68) 0%, rgba(15,23,42,0.48) 50%, rgba(15,23,42,0.85) 100%) !important;
   }
 
   .hero-content {
     position: relative !important;
     z-index: 10 !important;
-    min-height: 100vh !important;
-    min-height: 100svh !important;
+    min-height: calc(100vh - 80px) !important;
+    min-height: calc(100svh - 80px) !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
-    padding: 100px 20px 50px 20px !important;
+    padding: 95px 20px 45px 20px !important;
     text-align: center !important;
     width: 100% !important;
     box-sizing: border-box !important;

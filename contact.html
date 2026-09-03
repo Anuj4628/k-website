@@ -141,22 +141,24 @@
                             <h3 style="font-size: 24px; color: #081b44; margin-bottom: 30px;">Send an Inquiry</h3>
                             <form action="https://formsubmit.co/services@krestar.in" method="POST">
                                 <input type="hidden" name="_captcha" value="false">
-                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/contact.html">
+                                <input type="hidden" name="_cc" value="rajesh@krestar.in,management@krestar.in">
+                                <input type="hidden" name="_subject" value="New Website Inquiry - Krestar Inc">
+                                <input type="hidden" name="_template" value="table">
 
                                 <div style="margin-bottom: 20px;">
-                                    <input type="text" name="name" placeholder="Full Name" required
+                                    <input type="text" name="Full Name" placeholder="Full Name" required
                                         style="width: 100%; padding: 15px 20px; border: 1px solid #dce4f0; border-radius: 12px; font-size: 16px; background: #f8fafc; outline: none; transition: 0.3s; color: #081b44;">
                                 </div>
                                 <div style="margin-bottom: 20px;">
-                                    <input type="email" name="email" placeholder="Email Address" required
+                                    <input type="email" name="Email Address" placeholder="Email Address" required
                                         style="width: 100%; padding: 15px 20px; border: 1px solid #dce4f0; border-radius: 12px; font-size: 16px; background: #f8fafc; outline: none; transition: 0.3s; color: #081b44;">
                                 </div>
                                 <div style="margin-bottom: 20px;">
-                                    <input type="tel" name="phone" placeholder="Phone Number"
+                                    <input type="tel" name="Phone Number" placeholder="Phone Number"
                                         style="width: 100%; padding: 15px 20px; border: 1px solid #dce4f0; border-radius: 12px; font-size: 16px; background: #f8fafc; outline: none; transition: 0.3s; color: #081b44;">
                                 </div>
                                 <div style="margin-bottom: 20px;">
-                                    <select name="service" required
+                                    <select name="Service Required" required
                                         style="width: 100%; padding: 15px 20px; border: 1px solid #dce4f0; border-radius: 12px; font-size: 16px; background: #f8fafc; outline: none; transition: 0.3s; color: #5b6f8d;">
                                         <option value="" disabled selected>Service Required</option>
                                         <option value="Tank Cleaning">Tank Cleaning</option>
@@ -166,7 +168,7 @@
                                     </select>
                                 </div>
                                 <div style="margin-bottom: 20px;">
-                                    <textarea name="message" placeholder="Your Message" required
+                                    <textarea name="Message" placeholder="Your Message" required
                                         style="width: 100%; padding: 15px 20px; border: 1px solid #dce4f0; border-radius: 12px; font-size: 16px; background: #f8fafc; outline: none; transition: 0.3s; min-height: 150px; resize: vertical; color: #081b44;"></textarea>
                                 </div>
 
