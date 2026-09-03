@@ -9006,15 +9006,11 @@ body.nav-open {
 }
 
 .service-page-section .hero h1 span,
-.service-detail .hero h1 span,
-.hero h1 span,
-.hero-title em {
-  background: linear-gradient(135deg, #f97316 0%, #38bdf8 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  display: inline-block !important;
-  filter: drop-shadow(0 2px 8px rgba(249, 115, 22, 0.35)) !important;
-  font-style: normal !important;
+.service-detail .hero h1 span {
+  color: #f97316 !important;
+  background: none !important;
+  -webkit-text-fill-color: initial !important;
+  filter: none !important;
 }
 
 /* 3. Primary & Secondary CTA Buttons */
@@ -9273,4 +9269,33 @@ body.nav-open {
   margin-bottom: 20px !important;
   line-height: 1.25 !important;
   letter-spacing: -0.02em !important;
+}
+
+/* ==========================================================================
+   RESTORE SOLID BRAND COLORS / ORIGINAL TEXT STROKE (NO GRADIENT TEXT)
+   ========================================================================== */
+
+/* Homepage Hero Title em - Original Clean Text Stroke */
+.hero-title em {
+  font-style: normal !important;
+  color: transparent !important;
+  -webkit-text-stroke: 1.4px rgba(255, 255, 255, 0.82) !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: none !important;
+}
+
+/* Solid Brand Colors for Section & Hero Spans */
+.hero h1 span,
+.hero span,
+.section-head h2 span,
+.intro-content h2 span,
+.service-detail h1 span,
+.service-page-section h1 span {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: initial !important;
+  color: #f97316 !important;
+  filter: none !important;
 }
